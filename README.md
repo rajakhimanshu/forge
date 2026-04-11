@@ -1,11 +1,28 @@
-# Forge — AI R&D Co-Pilot
+<div align="center">
+  <h1>🛠️ Forge</h1>
+  <p><b>Your Local AI R&D Co-Pilot for Startup Idea Validation & Technical Architecture</b></p>
+  
+  <p>
+    <img alt="Python 3.11+" src="https://img.shields.io/badge/python-3.11+-blue.svg" />
+    <img alt="LangChain" src="https://img.shields.io/badge/LangChain-Enabled-blue" />
+    <img alt="Ollama" src="https://img.shields.io/badge/Local_AI-Ollama-purple" />
+    <img alt="License MIT" src="https://img.shields.io/badge/license-MIT-green" />
+  </p>
+</div>
+
+<br />
 
 Forge is a locally-running AI agent system designed to validate startup ideas and generate comprehensive technical development plans. By orchestrating a team of specialized agents, it transforms raw concepts into structured market research, feasibility verdicts, and developer-ready blueprints.
 
-## What Forge Does
-Forge automates the initial R&D phase of product development. It analyzes your idea's core problem, researches the competitive landscape using live web data, provides an honest "build/no-build" verdict, and generates a full technical requirements document and implementation blueprint.
+## ✨ What Forge Does
+Forge automates the initial R&D phase of product development. 
+- **Understands your idea:** Deconstructs the core problem and solution.
+- **Researches the market:** Analyzes the competitive landscape using live web data.
+- **Evaluates feasibility:** Provides an honest "build/no-build" verdict.
+- **Architects the product:** Generates a full technical requirements document and implementation blueprint.
 
-## Tech Stack
+## 🏗️ Technology Stack
+
 | Component | Tool | Cost |
 | :--- | :--- | :--- |
 | **LLM Engine** | Ollama (Llama 3.1 8B) | Free (Local) |
@@ -15,14 +32,24 @@ Forge automates the initial R&D phase of product development. It analyzes your i
 | **Embeddings** | Nomic-Embed-Text | Free (Local) |
 | **UI Framework** | Gradio | Open Source |
 
-## Prerequisites
+## 🚀 The Multi-Agent Pipeline
+
+Forge utilizes a multi-step LangGraph workflow to process your idea systematically:
+1. **Intake Agent**: Analyzes your input to extract core features and target audience.
+2. **Research Agent**: Scours the web using Tavily for competitors, market size, and trends.
+3. **Verdict Agent**: Weighs the research against the idea to deliver a clear feasibility verdict.
+4. **Technical Agent**: Translates the concept into high-level requirements (stack, APIs, data schemas).
+5. **Blueprint Agent**: Generates the final, developer-ready execution plan (folder structure, step-by-step tasks).
+
+## ⚙️ Prerequisites
 - **Python:** 3.11 or 3.12
 - **Node.js:** (Optional, for advanced tooling)
 - **Git:** For version control
 - **Ollama:** Installed and running locally
 
-## Quick Start
-Follow these steps to get Forge running on your machine:
+## 🛠️ Quick Start
+
+Follow these steps to setup and deploy Forge onto your machine:
 
 1. **Clone the repository:**
    ```bash
@@ -33,8 +60,10 @@ Follow these steps to get Forge running on your machine:
 2. **Create and activate a virtual environment:**
    ```bash
    python -m venv venv
+   
    # Windows:
    venv\Scripts\activate
+   
    # Mac/Linux:
    source venv/bin/activate
    ```
@@ -63,22 +92,28 @@ Follow these steps to get Forge running on your machine:
 7. **Access the UI:**
    Open your browser and navigate to `http://localhost:7860`
 
-## Project Structure
+## 📁 Project Structure
+
 ```text
 forge/
-├── agents/             # Logic for the 5 specialized AI agents
-├── tools/              # Shared utilities (web search, RAG, formatting)
-├── prompts/            # System prompt templates for each agent
-├── knowledge_base/     # Local documents for RAG (Markdown, PDF)
-├── outputs/            # Generated project reports and blueprints
-├── chroma_db/          # Local vector database storage
-├── scripts/            # Utility and testing scripts
+├── agents/             # Logic for the specialized AI agents
 ├── app.py              # Main Gradio Web UI entry point
-└── main.py             # Simple CLI entry point
+├── chroma_db/          # Local vector database storage
+├── knowledge_base/     # Local documents for RAG (Markdown, PDF)
+├── main.py             # Simple CLI entry point
+├── outputs/            # Generated project reports and blueprints
+├── prompts/            # System prompt templates for each agent
+├── scripts/            # Utility and testing scripts
+└── tools/              # Shared utilities (web search, RAG, formatting)
 ```
 
-## How to Use
-Simply enter your startup or project idea into the large text box in the Web UI and click **"Run Forge Analysis"**. You can watch the status log as Forge moves through the five phases: Idea Analysis, Market Research, Verdict, Technical R&D, and Development Blueprint. Once complete, navigate through the tabs to review the detailed reports, and use the **"Save All Reports"** button to export them to your local `outputs/` folder.
+## 🎯 How to Use
 
-## License
-MIT License
+1. **Input your Idea:** Enter your startup or project idea into the primary text box in the Web UI.
+2. **Execute:** Click **"Run Forge Analysis"**. 
+3. **Monitor Progress:** Watch the status log display real-time progress across all agent phases (Idea Analysis, Market Research, Verdict, Technical R&D, and Development Blueprint). 
+4. **Review:** Once complete, navigate through the tabs in the UI to review the detailed reports.
+5. **Export:** Click the **"Save All Reports"** button to export the intelligence directly to your local `outputs/` directory.
+
+## 📄 License
+This project is licensed under the MIT License.
