@@ -32,14 +32,45 @@ Forge automates the initial R&D phase of product development.
 | **Embeddings** | Nomic-Embed-Text | Free (Local) |
 | **UI Framework** | Gradio | Open Source |
 
-## 🚀 The Multi-Agent Pipeline
+## 🚀 The Multi-Agent Pipeline & Data Outputs
 
-Forge utilizes a multi-step LangGraph workflow to process your idea systematically:
-1. **Intake Agent**: Analyzes your input to extract core features and target audience.
-2. **Research Agent**: Scours the web using Tavily for competitors, market size, and trends.
-3. **Verdict Agent**: Weighs the research against the idea to deliver a clear feasibility verdict.
-4. **Technical Agent**: Translates the concept into high-level requirements (stack, APIs, data schemas).
-5. **Blueprint Agent**: Generates the final, developer-ready execution plan (folder structure, step-by-step tasks).
+Forge utilizes a multi-step LangGraph workflow to process your idea. Each phase generates highly specific operational data and architectural components, ultimately yielding a complete project dossier:
+
+### 1. 📝 Intake Phase
+- **What it does:** Deconstructs your raw idea into actionable mechanics.
+- **Data Yield in Depth:**
+  - **Core Value Proposition**: A crystalized summary of the exact problem being solved.
+  - **Target Audience Profiles**: Specific user personas and their pain points.
+  - **Monetization Mechanisms**: Potential pathways to revenue (e.g., subscription vs. transaction fees).
+
+### 2. 🕵️‍♂️ Research Phase
+- **What it does:** Uses live web searching via Tavily to analyze the real-world market.
+- **Data Yield in Depth:**
+  - **Direct Competitors**: Names, business models, and feature sets of existing platforms.
+  - **Whitespace Analysis**: Identification of gaps in the current market that your idea can fill.
+  - **SEO & Search Trends**: Real-world user demand and search intent data related to your product.
+
+### 3. ⚖️ Verdict Phase
+- **What it does:** Weighs market saturation against the technical feasibility of your idea.
+- **Data Yield in Depth:**
+  - **Go / No-Go Decision**: A brutally honest verdict on whether the idea is worth building.
+  - **Risk Identification**: Highlighting the biggest technical, regulatory, or market hurdles.
+  - **Critical Pivot Suggestions**: Direct recommendations on how to alter the idea if the original concept is fundamentally flawed or overly saturated.
+
+### 4. 🛠️ Technical R&D Phase
+- **What it does:** Architects the actual software needed to bring the idea to life, cross-referencing best practices via local RAG (ChromaDB).
+- **Data Yield in Depth:**
+  - **Technology Stack**: Specific recommendations for Frontend, Backend, Database, and Deployment.
+  - **Database Schema Planning**: Structural mapping of SQL/NoSQL tables, collections, and relationships.
+  - **API Architecture**: Outlines of core conceptual routes, endpoints, and data flows.
+  - **Security Considerations**: Authentication strategies, encryption necessities, and compliance requirements.
+
+### 5. 🏗️ Developer Blueprint Phase
+- **What it does:** Creates an execution master-plan for a developer to follow.
+- **Data Yield in Depth:**
+  - **Step-by-Step Build Sprints**: A phased, agile implementation plan (e.g., Sprint 1: Setup & Auth, Sprint 2: Core Logic).
+  - **Project Folder Structure**: A literal `tree` format layout mapping exactly where every configuration, source file, component, and utility should go.
+  - **Component Breakdown**: Specific UI components, system hooks, and state management requirements.
 
 ## ⚙️ Prerequisites
 - **Python:** 3.11 or 3.12
