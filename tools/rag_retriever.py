@@ -1,7 +1,10 @@
 import os
 from dotenv import load_dotenv
 from langchain_ollama import OllamaEmbeddings
-from langchain_community.vectorstores import Chroma
+try:
+    from langchain_chroma import Chroma
+except ImportError:
+    from langchain_community.vectorstores import Chroma
 
 # Load environment variables
 load_dotenv()
@@ -20,11 +23,15 @@ def get_vectorstore():
     if not os.path.exists(CHROMA_PATH):
         return None
 
-    return Chroma(
-        persist_directory=CHROMA_PATH,
-        embedding_function=embeddings,
-        collection_name="forge_kb"
-    )
+    try:
+        return Chroma(
+            persist_directory=CHROMA_PATH,
+            embedding_function=embeddings,
+            collection_name="forge_kb"
+        )
+    except Exception as e:
+        print(f"[RAG]  Warning: Could not load ChromaDB ({e}). Knowledge base will be skipped.")
+        return None
 
 def retrieve(query: str, k: int = 3) -> str:
     """

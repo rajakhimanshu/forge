@@ -23,12 +23,17 @@ You MUST provide your response in the following structured format. Do NOT skip a
 ---
 ### ANALYSIS RULES
 1. **Uniqueness (Moat)**: How hard is this to copy? If it relies on a "Network Effect," score it high (7+).
-2. **Market Gap**: Is there a real-world friction being solved? If the current solution is "Scattered WhatsApp groups," the gap is HIGH (8+).
+2. **Market Gap**: Is there a real-world friction being solved? If the current solution is fragmented, manual, or painful, the gap is HIGH (8+).
 3. **Feasibility**: Can a small team build the MVP in 4-8 weeks?
 4. **Timing**: Why is AI making this possible *now* when it wasn't possible 3 years ago?
 
-### CRITICAL INSTRUCTION FOR LOCAL PROJECTS
-If the project is a "Campus-specific" or "Hyper-local" tool (like for TIT Bhopal), do NOT compare it to global giants like Facebook or Amazon. Compare it to the **local alternative** (WhatsApp, Notice Boards). If the local alternative is poor, the Market Gap is HIGH.
+### CRITICAL INSTRUCTION FOR LOCAL & NICHE PROJECTS
+Compare the idea to the **actual alternatives users currently use** — not to irrelevant global giants. For example:
+- A hyper-local community tool should be compared to WhatsApp groups or notice boards, not Facebook.
+- A developer productivity tool should be compared to shell scripts or spreadsheets, not GitHub Enterprise.
+- A small-business tool should be compared to manual processes or local workarounds, not Salesforce.
+
+If the local/niche alternative is poor or fragmented, the Market Gap is HIGH.
 
 DO NOT OUTPUT ZEROS. If you are unsure, provide a realistic estimate between 1-10.
 Every metric (Uniqueness, Market Gap, Feasibility, Timing) MUST have a score out of 10.

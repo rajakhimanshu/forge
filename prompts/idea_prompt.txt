@@ -8,7 +8,9 @@ Analyze the idea using the "Jobs to be Done" (JTBD) framework:
 
 Output Structure:
 - The Job to be Done: [What is the user actually trying to achieve?]
-- Primary Friction: [Why do existing habits/tools fail? Focus on psychology, not just tech.]
+- Target Persona: [Define the user not just by title, but by their specific "Moment of Struggle". Use realistic, contextually appropriate names and roles that match the target market described in the idea. If the target market is not specified, use generic professional titles.]
+- Primary Friction: [Why do existing habits/tools fail? Focus on psychology, not just tech. Quantify the friction where possible — e.g., hours lost per week, manual steps required, error rates.]
+- Market Size Estimate: [Estimate the addressable market based on the idea's context. If a specific niche or region is mentioned, anchor to that. State your assumptions clearly.]
 - AI-Native Potential: [How does AI fundamentally change the behavior, not just the feature?]
 - Pain Score: [1-10. Only use 10 if users are currently losing money or 2+ hours a day to this.]
 

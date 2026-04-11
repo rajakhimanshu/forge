@@ -111,9 +111,9 @@ def generate_all_scaffold(project_name: str, idea_summary: str, tech_stack: list
 
 if __name__ == "__main__":
     # Test sample inputs
-    p_name = "TITConnect"
-    i_summary = "A campus-specific networking system for TIT Bhopal students."
-    t_stack = ["React", "Node.js", "PostgreSQL", "JWT", "Tavily", "Python"]
+    p_name = "ReportPilot"
+    i_summary = "An AI-powered tool that auto-generates weekly engineering reports from Git commits and Jira tickets."
+    t_stack = ["Next.js", "FastAPI", "Supabase", "JWT", "Tavily", "Python"]
     o_dir = "test_outputs"
     
     print("Testing Scaffold Generator...")

@@ -58,7 +58,8 @@ def idea_analysis_node(state: ForgeState):
 
 def market_research_node(state: ForgeState):
     print("\n=== Running Phase 2: Market Research ===")
-    research = run_research_agent(state["idea_analysis"])
+    original_context = state.get("sharpened_idea") or state.get("user_idea", "")
+    research = run_research_agent(state["idea_analysis"], original_context)
     return {"market_research": research, "current_phase": "market_research"}
 
 def verdict_node(state: ForgeState):

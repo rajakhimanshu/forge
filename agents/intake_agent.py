@@ -19,8 +19,10 @@ def generate_intake_questions(raw_idea: str) -> dict:
     
     # 5.b & 5.c Create messages
     system_content = (
-        "You are an expert startup analyst. Given a startup idea, "
-        "generate exactly 3 clarifying questions that will make the analysis more precise. "
+        "You are an expert startup analyst. You will be provided with a user's initial startup idea "
+        "and potentially some document context from a PDF. "
+        "Your goal is to generate exactly 3 clarifying questions that will make the analysis more precise. "
+        "You MUST consider both the user's typed idea AND the provided document context if it exists. "
         "Questions must identify: (1) the exact user persona, (2) current behaviour without "
         "the solution, (3) the single non-negotiable core feature. Format as:\n"
         "QUESTION_1: ...\n"
@@ -30,7 +32,7 @@ def generate_intake_questions(raw_idea: str) -> dict:
     
     messages = [
         SystemMessage(content=system_content),
-        HumanMessage(content=f"Generate 3 intake questions for this idea: {raw_idea}")
+        HumanMessage(content=f"Analyze the following combined input and generate 3 intake questions:\n\n{raw_idea}")
     ]
     
     # 5.d Parse response
@@ -85,7 +87,7 @@ def sharpen_idea(raw_idea: str, q1: str, a1: str, q2: str, a2: str, q3: str, a3:
 
 # 7. Test block
 if __name__ == "__main__":
-    test_idea = "A campus-specific networking system for TIT Bhopal students to buy/sell books, share notes, and collaborate on projects."
+    test_idea = "An AI-powered personal finance tracker that automatically categorizes expenses from bank SMS/email and generates weekly insights for young professionals."
     
     print("\n=== STEP 1: GENERATING QUESTIONS ===")
     questions = generate_intake_questions(test_idea)
@@ -96,9 +98,9 @@ if __name__ == "__main__":
     print("\n=== STEP 2: SHARPENING IDEA ===")
     # Simulating user answers
     answers = {
-        "a1": "Final-year engineering students at TIT Bhopal who need affordable resources and project partners for their major projects.",
-        "a2": "They rely on scattered, unorganized WhatsApp groups and physical notice boards where info gets buried quickly.",
-        "a3": "A verified, student-only marketplace and skill-matching directory."
+        "a1": "Young professionals (22-30) who struggle to track where their salary goes each month.",
+        "a2": "They rely on manual spreadsheets or generic banking apps that don't categorize spending intelligently.",
+        "a3": "Auto-categorization of expenses from SMS/email — zero manual entry required."
     }
     
     sharpened = sharpen_idea(
