@@ -72,6 +72,28 @@ Forge utilizes a multi-step LangGraph workflow to process your idea. Each phase 
   - **Project Folder Structure**: A literal `tree` format layout mapping exactly where every configuration, source file, component, and utility should go.
   - **Component Breakdown**: Specific UI components, system hooks, and state management requirements.
 
+---
+
+## 🔍 Intelligence Depth & System Outputs
+
+Forge doesn't just "chat"; it synthesizes multi-layered data to provide expert-level depth across several domains:
+
+### 📈 Market & Research Depth
+*   **Competitor Moats:** Goes beyond listing names; identifies *how* competitors are defended and where they are vulnerable. 
+*   **Search Intent Rationale:** Correlates Tavily search data with user intent categories (commercial vs. informational) to suggest marketing angles.
+*   **Saturation Scoring:** Provides a numerical 1-10 score on market density based on the density of existing solutions.
+
+### 💻 Technical & Architectural Depth
+*   **Schema & Data Modeling:** Provides detailed JSON or SQL table definitions including primary keys, foreign keys, and indexing suggestions for performance.
+*   **Stack Rationale:** Explains *why* a specific stack (e.g., Next.js vs. Vanilla JS) is recommended based on the complexity and scaling needs extracted in the Intake phase.
+*   **Implementation Sprints:** Categorizes tasks into "Core MVP," "Phase 1 Features," and "Scalability Roadmap" so you know what to build first.
+
+### 🧠 The RAG Knowledge Engine
+Forge utilizes a **RAG (Retrieval Augmented Generation)** pipeline that cross-references your idea with:
+*   **Indian Tech-Stack Best Practices:** Optimized for regional requirements (e.g., Razorpay integration, SMS gateways).
+*   **Modern DevOps Checklists:** Ensuring your output includes Dockerization, CI/CD, and security best practices from the start.
+*   **Local Documentation:** If you upload a PDF, Forge indexes it into ChromaDB, allowing the agents to "read" your existing business plans or legal docs and integrate them into the technical blueprint.
+
 ## ⚙️ Prerequisites
 - **Python:** 3.11 or 3.12
 - **Node.js:** (Optional, for advanced tooling)
