@@ -1,172 +1,152 @@
 <div align="center">
-  <h1>🛠️ Forge</h1>
+  <h1>🛠️ FORGE</h1>
   <p><b>Your Local AI R&D Co-Pilot for Startup Idea Validation & Technical Architecture</b></p>
   
   <p>
-    <img alt="Python 3.11+" src="https://img.shields.io/badge/python-3.11+-blue.svg" />
-    <img alt="LangChain" src="https://img.shields.io/badge/LangChain-Enabled-blue" />
-    <img alt="Ollama" src="https://img.shields.io/badge/Local_AI-Ollama-purple" />
-    <img alt="License MIT" src="https://img.shields.io/badge/license-MIT-green" />
+    <img alt="Next.js" src="https://img.shields.io/badge/Next.js-black?style=for-the-badge&logo=next.js&logoColor=white" />
+    <img alt="FastAPI" src="https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi" />
+    <img alt="LangGraph" src="https://img.shields.io/badge/LangGraph-Enabled-blue?style=for-the-badge" />
+    <img alt="Python 3.11+" src="https://img.shields.io/badge/python-3.11+-blue.svg?style=for-the-badge&logo=python" />
+    <img alt="License MIT" src="https://img.shields.io/badge/license-MIT-green?style=for-the-badge" />
   </p>
 </div>
 
 <br />
 
-Forge is a locally-running AI agent system designed to validate startup ideas and generate comprehensive technical development plans. By orchestrating a team of specialized agents, it transforms raw concepts into structured market research, feasibility verdicts, and developer-ready blueprints.
+**FORGE** is an automated, multi-agent LangGraph pipeline architected as a highly opinionated **"Founder's OS"**. It acts as a ruthless technical co-founder and product manager, systematically transforming a raw startup idea into a comprehensive, zero-ambiguity execution plan.
 
-## ✨ What Forge Does
-Forge automates the initial R&D phase of product development. 
-- **Understands your idea:** Deconstructs the core problem and solution.
-- **Researches the market:** Analyzes the competitive landscape using live web data.
-- **Evaluates feasibility:** Provides an honest "build/no-build" verdict.
-- **Architects the product:** Generates a full technical requirements document and implementation blueprint.
-
-## 🏗️ Technology Stack
-
-| Component | Tool | Cost |
-| :--- | :--- | :--- |
-| **LLM Engine** | Ollama (Llama 3.1 8B) | Free (Local) |
-| **Orchestration** | LangChain & LangGraph | Open Source |
-| **Web Search** | Tavily API | Freemium |
-| **Vector DB** | ChromaDB | Open Source |
-| **Embeddings** | Nomic-Embed-Text | Free (Local) |
-| **UI Framework** | Gradio | Open Source |
-
-## 🚀 The Multi-Agent Pipeline & Data Outputs
-
-Forge utilizes a multi-step LangGraph workflow to process your idea. Each phase generates highly specific operational data and architectural components, ultimately yielding a complete project dossier:
-
-### 1. 📝 Intake Phase
-- **What it does:** Deconstructs your raw idea into actionable mechanics.
-- **Data Yield in Depth:**
-  - **Core Value Proposition**: A crystalized summary of the exact problem being solved.
-  - **Target Audience Profiles**: Specific user personas and their pain points.
-  - **Monetization Mechanisms**: Potential pathways to revenue (e.g., subscription vs. transaction fees).
-
-### 2. 🕵️‍♂️ Research Phase
-- **What it does:** Uses live web searching via Tavily to analyze the real-world market.
-- **Data Yield in Depth:**
-  - **Direct Competitors**: Names, business models, and feature sets of existing platforms.
-  - **Whitespace Analysis**: Identification of gaps in the current market that your idea can fill.
-  - **SEO & Search Trends**: Real-world user demand and search intent data related to your product.
-
-### 3. ⚖️ Verdict Phase
-- **What it does:** Weighs market saturation against the technical feasibility of your idea.
-- **Data Yield in Depth:**
-  - **Go / No-Go Decision**: A brutally honest verdict on whether the idea is worth building.
-  - **Risk Identification**: Highlighting the biggest technical, regulatory, or market hurdles.
-  - **Critical Pivot Suggestions**: Direct recommendations on how to alter the idea if the original concept is fundamentally flawed or overly saturated.
-
-### 4. 🛠️ Technical R&D Phase
-- **What it does:** Architects the actual software needed to bring the idea to life, cross-referencing best practices via local RAG (ChromaDB).
-- **Data Yield in Depth:**
-  - **Technology Stack**: Specific recommendations for Frontend, Backend, Database, and Deployment.
-  - **Database Schema Planning**: Structural mapping of SQL/NoSQL tables, collections, and relationships.
-  - **API Architecture**: Outlines of core conceptual routes, endpoints, and data flows.
-  - **Security Considerations**: Authentication strategies, encryption necessities, and compliance requirements.
-
-### 5. 🏗️ Developer Blueprint Phase
-- **What it does:** Creates an execution master-plan for a developer to follow.
-- **Data Yield in Depth:**
-  - **Step-by-Step Build Sprints**: A phased, agile implementation plan (e.g., Sprint 1: Setup & Auth, Sprint 2: Core Logic).
-  - **Project Folder Structure**: A literal `tree` format layout mapping exactly where every configuration, source file, component, and utility should go.
-  - **Component Breakdown**: Specific UI components, system hooks, and state management requirements.
+The system enforces accountability, demands objective validation (historical failure analysis via "Graveyards"), and forces tactical execution planning before any code is written. By integrating real-world market sentiment (Reddit/HN) with hyper-specific technical constraints, FORGE bridges the gap between high-level ideation and ground-level execution.
 
 ---
 
-## 🔍 Intelligence Depth & System Outputs
+## ✨ Core Value Propositions
 
-Forge doesn't just "chat"; it synthesizes multi-layered data to provide expert-level depth across several domains:
+- **Zero-Ambiguity Blueprints:** Generates exact environment-aware instructions (Windows/Mac/Linux + Cursor/Gemini/Copilot), complete with `npm`/`pip` installation commands and file dependency trees.
+- **The Honest Verdict Layer:** Implements a mathematically grounded BUILD/PIVOT/SKIP pipeline based on historical startup failures.
+- **Accountability Tracking:** Immutable SQLite persistence tracking project velocity and abandonment.
+- **Dynamic Execution:** Outputs continuously stream via Server-Sent Events (SSE) to a sleek Next.js UI, compiling ultimately into a `.docx` build guide.
 
-### 📈 Market & Research Depth
-*   **Competitor Moats:** Goes beyond listing names; identifies *how* competitors are defended and where they are vulnerable. 
-*   **Search Intent Rationale:** Correlates Tavily search data with user intent categories (commercial vs. informational) to suggest marketing angles.
-*   **Saturation Scoring:** Provides a numerical 1-10 score on market density based on the density of existing solutions.
+---
 
-### 💻 Technical & Architectural Depth
-*   **Schema & Data Modeling:** Provides detailed JSON or SQL table definitions including primary keys, foreign keys, and indexing suggestions for performance.
-*   **Stack Rationale:** Explains *why* a specific stack (e.g., Next.js vs. Vanilla JS) is recommended based on the complexity and scaling needs extracted in the Intake phase.
-*   **Implementation Sprints:** Categorizes tasks into "Core MVP," "Phase 1 Features," and "Scalability Roadmap" so you know what to build first.
+## 🏗️ Architecture Stack
 
-### 🧠 The RAG Knowledge Engine
-Forge utilizes a **RAG (Retrieval Augmented Generation)** pipeline that cross-references your idea with:
-*   **Indian Tech-Stack Best Practices:** Optimized for regional requirements (e.g., Razorpay integration, SMS gateways).
-*   **Modern DevOps Checklists:** Ensuring your output includes Dockerization, CI/CD, and security best practices from the start.
-*   **Local Documentation:** If you upload a PDF, Forge indexes it into ChromaDB, allowing the agents to "read" your existing business plans or legal docs and integrate them into the technical blueprint.
+FORGE uses a modern decoupled architecture:
+
+| Component | Technology | Description |
+| :--- | :--- | :--- |
+| **Frontend** | **Next.js (React)** | Streams Server-Sent Events (SSE) for real-time AI reasoning visualization. |
+| **Backend API** | **FastAPI** | High-performance Python backend coordinating the AI agents. |
+| **Orchestration** | **LangGraph** | Multi-agent state machine enforcing strict Pydantic data schemas. |
+| **LLM Engine** | **Gemini / Groq / Ollama** | 3-tier fallback execution ensuring zero-downtime AI generations. |
+| **Intelligence** | **Tavily API & ChromaDB** | Live web searching (market gaps) and local vector embeddings. |
+| **Database** | **SQLite** | Caches API searches and persists user dashboards. |
+
+---
+
+## 🚀 The Multi-Agent Pipeline
+
+FORGE utilizes a sequential multi-step workflow. Each phase generates highly specific operational data:
+
+### 1. 📝 Intake & Idea Agent
+Deconstructs your raw idea into actionable mechanics, identifying core value propositions and monetization strategies.
+
+### 2. 🕵️‍♂️ Research Agent
+Scans Reddit, HackerNews, and Google (via Tavily) to analyze the real-world market, direct competitors, whitespace gaps, and SEO intent.
+
+### 3. ⚖️ Verdict Agent
+The "Honest Verdict Layer" weighs market saturation against technical feasibility, delivering a brutal BUILD, PIVOT, or SKIP verdict.
+
+### 4. 🛠️ Technical Architect Agents
+Maps features into a concrete Tech Stack, using a Service Resolver to select optimal real-world services (e.g., Supabase, Vercel) based on constraints.
+
+### 5. 🏗️ Developer Blueprint Agents
+Generates hyper-specific OS-aware "SETUP" steps (terminal commands) and "CODING" steps (AI prompts) ready to be copy-pasted into Cursor or Copilot. Finally, everything is bundled into a `.docx` output.
+
+---
 
 ## ⚙️ Prerequisites
+
 - **Python:** 3.11 or 3.12
-- **Node.js:** (Optional, for advanced tooling)
+- **Node.js:** v18+ (For running the Next.js Frontend)
 - **Git:** For version control
-- **Ollama:** Installed and running locally
+- **API Keys:** You will need a [Tavily API Key](https://tavily.com/) and optionally a Gemini/Groq API key.
+- **Ollama:** Installed and running locally (if you plan to use local models as a fallback).
 
-## 🛠️ Quick Start
+---
 
-Follow these steps to setup and deploy Forge onto your machine:
+## 🛠️ Quick Start & Setup
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/rajakhimanshu/forge.git
-   cd forge
-   ```
+Follow these steps to deploy FORGE locally on your machine. The system is split into two parts: Backend and Frontend.
 
-2. **Create and activate a virtual environment:**
-   ```bash
-   python -m venv venv
-   
-   # Windows:
-   venv\Scripts\activate
-   
-   # Mac/Linux:
-   source venv/bin/activate
-   ```
-
-3. **Install dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. **Configure environment variables:**
-   - Copy `.env.example` to `.env`
-   - Open `.env` and add your [Tavily API Key](https://tavily.com/)
-   - Ensure `OLLAMA_MODEL=llama3.1:8b` is set
-
-5. **Pull the required Ollama models:**
-   ```bash
-   ollama pull llama3.1:8b
-   ollama pull nomic-embed-text
-   ```
-
-6. **Launch Forge:**
-   ```bash
-   python app.py
-   ```
-
-7. **Access the UI:**
-   Open your browser and navigate to `http://localhost:7860`
-
-## 📁 Project Structure
-
-```text
-forge/
-├── agents/             # Logic for the specialized AI agents
-├── app.py              # Main Gradio Web UI entry point
-├── chroma_db/          # Local vector database storage
-├── knowledge_base/     # Local documents for RAG (Markdown, PDF)
-├── main.py             # Simple CLI entry point
-├── outputs/            # Generated project reports and blueprints
-├── prompts/            # System prompt templates for each agent
-├── scripts/            # Utility and testing scripts
-└── tools/              # Shared utilities (web search, RAG, formatting)
+### 1. Clone the Repository
+```bash
+git clone https://github.com/rajakhimanshu/forge.git
+cd forge
 ```
+
+### 2. Setup the Backend (FastAPI & LangGraph)
+
+Open a new terminal and navigate to the backend directory:
+```bash
+cd backend
+
+# Create and activate a virtual environment
+python -m venv venv
+# Windows:
+venv\Scripts\activate
+# Mac/Linux:
+source venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Configure environment variables
+cp .env.example .env
+# Edit .env with your TAVILY_API_KEY, GROQ_API_KEY, and GEMINI_API_KEY
+```
+*(Optional) If using local Ollama models:*
+```bash
+ollama pull llama3.1:8b
+ollama pull nomic-embed-text
+```
+
+**Start the Backend Server:**
+```bash
+python main.py
+# The API will be available at http://localhost:8000
+```
+
+### 3. Setup the Frontend (Next.js)
+
+Open a second terminal and navigate to the frontend directory:
+```bash
+cd frontend
+
+# Install Node dependencies
+npm install
+
+# Start the development server
+npm run dev
+# The UI will be available at http://localhost:3000
+```
+
+---
 
 ## 🎯 How to Use
 
-1. **Input your Idea:** Enter your startup or project idea into the primary text box in the Web UI.
-2. **Execute:** Click **"Run Forge Analysis"**. 
-3. **Monitor Progress:** Watch the status log display real-time progress across all agent phases (Idea Analysis, Market Research, Verdict, Technical R&D, and Development Blueprint). 
-4. **Review:** Once complete, navigate through the tabs in the UI to review the detailed reports.
-5. **Export:** Click the **"Save All Reports"** button to export the intelligence directly to your local `outputs/` directory.
+1. **Access the UI:** Open your browser and navigate to `http://localhost:3000`.
+2. **Input your Idea:** Provide your raw startup concept and select your target operating system/IDE preferences.
+3. **Execute Pipeline:** Start the FORGE analysis.
+4. **Monitor Progress:** Watch the real-time SSE stream render the agents' thought processes as markdown directly in the UI.
+5. **Download Artifacts:** Once the pipeline completes, download the generated `.docx` build guide for your developer team.
+6. **Track Accountability:** Check the main dashboard to view your historical ideas and their BUILD/PIVOT statuses.
+
+---
+
+## 🧠 Engineering Depth & Architecture
+For a deep dive into how FORGE mitigates LLM hallucination, manages Pydantic context serialization across multiple agents, and orchestrates its 3-Tier Fallback Router, please read our [Engineering Architecture Guide](./ENGINEERING_DEPTH.md).
+
+---
 
 ## 📄 License
 This project is licensed under the MIT License.
