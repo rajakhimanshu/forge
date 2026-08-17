@@ -1,11 +1,9 @@
-.env
-__pycache__/
-*.pyc
+# Ignore scratch files and output text/PDF files
+scratch/
+*.txt
+*.pdf
+
+# Ignore backend and frontend specific environments at root just in case
 venv/
-chroma_db/
-outputs/
-.DS_Store
-*.egg-info/
-dist/
-.pytest_cache/
-archive/
+node_modules/
+.env
