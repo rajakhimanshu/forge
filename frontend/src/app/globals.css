@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #0A0A0A;
+  --color-surface: #111111;
+  --color-card: #1A1A1A;
+  --color-border: #222222;
+  --color-border-focus: #2A2A2A;
+  --color-accent: #2563EB;
+  --color-foreground: #FFFFFF;
+  --color-secondary: #E5E5E5;
+  --color-muted: #737373;
+  --color-muted-hover: #A3A3A3;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  --radius-sm: 2px;
+  --radius-default: 2px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground antialiased selection:bg-accent/30 selection:text-white;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.03) 1px, transparent 0);
+    background-size: 32px 32px;
+  }
+}
+
+@layer components {
+  /* Minimal Scrollbar */
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-border rounded-full hover:bg-muted/30;
+  }
+
+  /* Enterprise Prose */
+  .prose-obsidian {
+    @apply max-w-none;
+  }
+  .prose-obsidian h1, .prose-obsidian h2, .prose-obsidian h3 {
+    @apply font-sans font-bold tracking-tight text-white mt-12 mb-6;
+  }
+  .prose-obsidian h1 { @apply text-3xl; }
+  .prose-obsidian h2 { @apply text-xl border-b border-border pb-2; }
+  .prose-obsidian h3 { @apply text-xs uppercase tracking-[0.2em] text-accent; }
+  
+  .prose-obsidian p, .prose-obsidian li {
+    @apply text-[15px] leading-8 text-secondary/80 mb-4;
+  }
+  
+  .prose-obsidian strong {
+    @apply font-bold text-white;
+  }
+
+  .prose-obsidian ul {
+    @apply list-disc list-outside ml-5 space-y-3 my-6 text-secondary/80 text-[15px];
+  }
+  
+  .prose-obsidian ol {
+    @apply list-decimal list-outside ml-5 space-y-3 my-6 text-secondary/80 text-[15px];
+  }
+  
+  .prose-obsidian pre {
+    @apply bg-surface border border-border p-6 rounded-sm my-8 overflow-x-auto;
+  }
+  
+  .prose-obsidian code {
+    @apply font-mono text-[13px] bg-surface border border-border px-1.5 py-0.5 rounded-sm text-secondary;
+  }
+  
+  .prose-obsidian pre code {
+    @apply bg-transparent border-0 p-0 text-secondary leading-relaxed;
+  }
+  
+  .prose-obsidian blockquote {
+    @apply border-l border-accent pl-6 my-8 text-white text-base italic;
+  }
+  .prose-obsidian blockquote p {
+    @apply text-white/90;
+  }
+
+  .prose-obsidian table {
+    @apply w-full text-sm text-left my-10 border-collapse;
+  }
+  
+  .prose-obsidian th {
+    @apply border-b border-border text-[10px] font-bold uppercase tracking-widest text-muted py-4 px-4;
+  }
+  
+  .prose-obsidian td {
+    @apply border-b border-border/50 py-4 px-4 text-[14px] text-secondary/80 align-top;
+  }
+  
+  .prose-obsidian tr:hover td {
+    @apply bg-surface/30;
+  }
+  
+  .prose-obsidian hr {
+    @apply border-border my-12;
+  }
+
+  /* Custom Utilities */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
