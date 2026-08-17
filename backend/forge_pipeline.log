@@ -1,0 +1,1110 @@
+{"time": "2026-04-25 22:27:44,349", "level": "INFO", "msg": "[OLLAMA] WARNING: Cannot reach http://localhost:11434 — All connection attempts failed. Set OLLAMA_MODEL= in .env to disable this check, or start Ollama."}
+{"time": "2026-04-25 22:27:51,607", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-25 22:27:53,984", "level": "INFO", "msg": "[OK] Tier 1 (primary): IntakeQuestionsOutput"}
+{"time": "2026-04-25 22:27:56,577", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-25 22:27:58,234", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/SharpenIdeaOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-25 22:27:58,237", "level": "INFO", "msg": "[RETRY] primary rate-limited (attempt 1/2). Waiting 2s before retry..."}
+{"time": "2026-04-25 22:28:00,302", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/SharpenIdeaOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-25 22:28:00,302", "level": "INFO", "msg": "[REDUNDANCY] primary rate-limited. Moving to next provider..."}
+{"time": "2026-04-25 22:28:15,995", "level": "INFO", "msg": "[OK] Tier 1 (secondary-fallback): SharpenIdeaOutput"}
+{"time": "2026-04-25 22:28:21,004", "level": "INFO", "msg": "\n=== Running Phase 1: Idea Analysis ==="}
+{"time": "2026-04-25 22:28:21,453", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-25 22:28:23,049", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/IdeaOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-25 22:28:23,049", "level": "INFO", "msg": "[RETRY] primary rate-limited (attempt 1/2). Waiting 2s before retry..."}
+{"time": "2026-04-25 22:28:25,131", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/IdeaOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-25 22:28:25,132", "level": "INFO", "msg": "[REDUNDANCY] primary rate-limited. Moving to next provider..."}
+{"time": "2026-04-25 22:28:40,133", "level": "INFO", "msg": "[TPM GUARD] Window ~4032 tokens used. Sleeping 15s before next call..."}
+{"time": "2026-04-25 22:28:56,341", "level": "INFO", "msg": "[OK] Tier 1 (secondary-fallback): IdeaOutput"}
+{"time": "2026-04-25 22:28:56,344", "level": "INFO", "msg": "\n=== Running Phase 1b: Feature Decomposition ==="}
+{"time": "2026-04-25 22:28:56,791", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-25 22:28:57,675", "level": "INFO", "msg": "[TPM GUARD] Window ~4640 tokens used. Sleeping 5s before next call..."}
+{"time": "2026-04-25 22:29:02,560", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/FeatureBundle): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-25 22:29:02,560", "level": "INFO", "msg": "[RETRY] primary rate-limited (attempt 1/2). Waiting 2s before retry..."}
+{"time": "2026-04-25 22:29:04,560", "level": "INFO", "msg": "[TPM GUARD] Window ~5104 tokens used. Sleeping 13s before next call..."}
+{"time": "2026-04-25 22:29:17,993", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/FeatureBundle): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-25 22:29:17,993", "level": "INFO", "msg": "[REDUNDANCY] primary rate-limited. Moving to next provider..."}
+{"time": "2026-04-25 22:29:33,964", "level": "INFO", "msg": "[OK] Tier 1 (secondary-fallback): FeatureBundle"}
+{"time": "2026-04-25 22:29:33,964", "level": "INFO", "msg": "[FEATURE AGENT] [OK] Decomposed into 5 features. MVP: ['auth', 'caption_generator', 'payment_gateway']"}
+{"time": "2026-04-25 22:29:33,965", "level": "INFO", "msg": "  Features: ['auth', 'profile', 'caption_generator', 'video_upload', 'payment_gateway']"}
+{"time": "2026-04-25 22:29:33,965", "level": "INFO", "msg": "  Features: ['auth', 'profile', 'caption_generator', 'video_upload', 'payment_gateway']"}
+{"time": "2026-04-25 22:29:33,965", "level": "INFO", "msg": "\n=== Running Phase 2: Market Research ==="}
+{"time": "2026-04-25 22:29:34,431", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-25 22:29:35,829", "level": "INFO", "msg": "[OK] Tier 1 (primary): CompetitorNamesOutput"}
+{"time": "2026-04-25 22:30:12,578", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-25 22:30:13,994", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/MarketOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-25 22:30:13,994", "level": "INFO", "msg": "[RETRY] primary rate-limited (attempt 1/2). Waiting 2s before retry..."}
+{"time": "2026-04-25 22:30:15,995", "level": "INFO", "msg": "[TPM GUARD] Window ~4832 tokens used. Sleeping 3s before next call..."}
+{"time": "2026-04-25 22:30:19,838", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/MarketOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-25 22:30:19,839", "level": "INFO", "msg": "[REDUNDANCY] primary rate-limited. Moving to next provider..."}
+{"time": "2026-04-25 22:30:34,840", "level": "INFO", "msg": "[TPM GUARD] Window ~5969 tokens used. Sleeping 3s before next call..."}
+{"time": "2026-04-25 22:30:39,068", "level": "INFO", "msg": "[OK] Tier 1 (secondary-fallback): MarketOutput"}
+{"time": "2026-04-25 22:30:39,070", "level": "INFO", "msg": "\n=== Running USP Agent: Finding uncovered gap ==="}
+{"time": "2026-04-25 22:30:39,728", "level": "INFO", "msg": "[USP AGENT] 3 complaints, 2 competitors"}
+{"time": "2026-04-25 22:30:39,729", "level": "INFO", "msg": "[USP AGENT] Uncovered complaints: ['I was expecting more accurate captions, but they were often incorrect', 'I was disappointed with the captioning service']"}
+{"time": "2026-04-25 22:30:39,730", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-25 22:30:41,352", "level": "INFO", "msg": "[TPM GUARD] Window ~8451 tokens used. Sleeping 34s before next call..."}
+{"time": "2026-04-25 22:31:16,282", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/USPOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-25 22:31:16,282", "level": "INFO", "msg": "[RETRY] primary rate-limited (attempt 1/2). Waiting 2s before retry..."}
+{"time": "2026-04-25 22:31:18,282", "level": "INFO", "msg": "[TPM GUARD] Window ~6090 tokens used. Sleeping 3s before next call..."}
+{"time": "2026-04-25 22:31:21,675", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/USPOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-25 22:31:21,675", "level": "INFO", "msg": "[REDUNDANCY] primary rate-limited. Moving to next provider..."}
+{"time": "2026-04-25 22:31:37,177", "level": "INFO", "msg": "[OK] Tier 1 (secondary-fallback): USPOutput"}
+{"time": "2026-04-25 22:31:37,180", "level": "INFO", "msg": "[USP AGENT] USP: Accurate Hindi-English captions for new video creators."}
+{"time": "2026-04-25 22:31:37,181", "level": "INFO", "msg": "  USP gap_found: True | Accurate Hindi-English captions for new video creators."}
+{"time": "2026-04-25 22:31:37,182", "level": "INFO", "msg": "\n=== Running Phase 3: Verdict ==="}
+{"time": "2026-04-25 22:31:41,186", "level": "INFO", "msg": "VERDICT SCORES: {'market_proof': 16, 'competition': 15, 'total': 31}"}
+{"time": "2026-04-25 22:31:41,190", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-25 22:31:42,876", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/VerdictOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-25 22:31:42,876", "level": "INFO", "msg": "[RETRY] primary rate-limited (attempt 1/2). Waiting 2s before retry..."}
+{"time": "2026-04-25 22:31:45,026", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/VerdictOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-25 22:31:45,026", "level": "INFO", "msg": "[REDUNDANCY] primary rate-limited. Moving to next provider..."}
+{"time": "2026-04-25 22:32:00,879", "level": "INFO", "msg": "[OK] Tier 1 (secondary-fallback): VerdictOutput"}
+{"time": "2026-04-25 22:32:08,883", "level": "INFO", "msg": "\\n=== Running Phase 3.5: Kill Condition ==="}
+{"time": "2026-04-25 22:32:09,580", "level": "INFO", "msg": "\n--- KILL CONDITION RESEARCH FOR Captio ---"}
+{"time": "2026-04-25 22:32:37,225", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-25 22:32:39,134", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/KillConditionOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-25 22:32:39,134", "level": "INFO", "msg": "[RETRY] primary rate-limited (attempt 1/2). Waiting 2s before retry..."}
+{"time": "2026-04-25 22:32:41,135", "level": "INFO", "msg": "[TPM GUARD] Window ~4626 tokens used. Sleeping 3s before next call..."}
+{"time": "2026-04-25 22:32:44,999", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/KillConditionOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-25 22:32:44,999", "level": "INFO", "msg": "[REDUNDANCY] primary rate-limited. Moving to next provider..."}
+{"time": "2026-04-25 22:33:00,706", "level": "INFO", "msg": "[OK] Tier 1 (secondary-fallback): KillConditionOutput"}
+{"time": "2026-04-25 22:33:08,710", "level": "INFO", "msg": "\n=== Running Phase 4: Technical R&D ==="}
+{"time": "2026-04-25 22:33:14,486", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-25 22:33:16,316", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/TechOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-25 22:33:16,316", "level": "INFO", "msg": "[RETRY] primary rate-limited (attempt 1/2). Waiting 2s before retry..."}
+{"time": "2026-04-25 22:33:18,318", "level": "INFO", "msg": "[TPM GUARD] Window ~4443 tokens used. Sleeping 22s before next call..."}
+{"time": "2026-04-25 22:33:41,281", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/TechOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-25 22:33:41,282", "level": "INFO", "msg": "[REDUNDANCY] primary rate-limited. Moving to next provider..."}
+{"time": "2026-04-25 22:33:56,883", "level": "INFO", "msg": "[OK] Tier 1 (secondary-fallback): TechOutput"}
+{"time": "2026-04-25 22:34:04,888", "level": "INFO", "msg": "\n=== Running Phase 4b: Service Resolver ==="}
+{"time": "2026-04-25 22:34:04,890", "level": "INFO", "msg": "[SERVICE RESOLVER] Resolving 3 infra needs via Tavily..."}
+{"time": "2026-04-25 22:34:04,893", "level": "INFO", "msg": "[QUOTA] OK: 27/1000 Tavily calls this month."}
+{"time": "2026-04-25 22:34:05,820", "level": "INFO", "msg": "  → Resolving: user authentication JWT"}
+{"time": "2026-04-25 22:34:09,594", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-25 22:34:11,446", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/ServiceResolution): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-25 22:34:11,447", "level": "INFO", "msg": "[RETRY] primary rate-limited (attempt 1/2). Waiting 2s before retry..."}
+{"time": "2026-04-25 22:34:13,448", "level": "INFO", "msg": "[TPM GUARD] Window ~4460 tokens used. Sleeping 4s before next call..."}
+{"time": "2026-04-25 22:34:18,160", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/ServiceResolution): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-25 22:34:18,160", "level": "INFO", "msg": "[REDUNDANCY] primary rate-limited. Moving to next provider..."}
+{"time": "2026-04-25 22:34:33,160", "level": "INFO", "msg": "[TPM GUARD] Window ~4720 tokens used. Sleeping 10s before next call..."}
+{"time": "2026-04-25 22:34:43,352", "level": "INFO", "msg": "[OK] Tier 1 (secondary-fallback): ServiceResolution"}
+{"time": "2026-04-25 22:34:43,355", "level": "INFO", "msg": "  → Resolving: payment gateway India"}
+{"time": "2026-04-25 22:34:47,165", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-25 22:34:48,724", "level": "INFO", "msg": "[TPM GUARD] Window ~4980 tokens used. Sleeping 10s before next call..."}
+{"time": "2026-04-25 22:34:58,888", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/ServiceResolution): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-25 22:34:58,889", "level": "INFO", "msg": "[RETRY] primary rate-limited (attempt 1/2). Waiting 2s before retry..."}
+{"time": "2026-04-25 22:35:00,889", "level": "INFO", "msg": "[TPM GUARD] Window ~5220 tokens used. Sleeping 12s before next call..."}
+{"time": "2026-04-25 22:35:13,451", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/ServiceResolution): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-25 22:35:13,451", "level": "INFO", "msg": "[REDUNDANCY] primary rate-limited. Moving to next provider..."}
+{"time": "2026-04-25 22:35:28,452", "level": "INFO", "msg": "[TPM GUARD] Window ~3890 tokens used. Sleeping 16s before next call..."}
+{"time": "2026-04-25 22:35:45,473", "level": "INFO", "msg": "[OK] Tier 1 (secondary-fallback): ServiceResolution"}
+{"time": "2026-04-25 22:35:45,473", "level": "INFO", "msg": "  → Resolving: database hosting free tier"}
+{"time": "2026-04-25 22:35:49,309", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-25 22:35:50,716", "level": "INFO", "msg": "[TPM GUARD] Window ~3870 tokens used. Sleeping 10s before next call..."}
+{"time": "2026-04-25 22:36:00,646", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/ServiceResolution): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-25 22:36:00,647", "level": "INFO", "msg": "[RETRY] primary rate-limited (attempt 1/2). Waiting 2s before retry..."}
+{"time": "2026-04-25 22:36:02,648", "level": "INFO", "msg": "[TPM GUARD] Window ~3857 tokens used. Sleeping 12s before next call..."}
+{"time": "2026-04-25 22:36:15,363", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/ServiceResolution): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-25 22:36:15,364", "level": "INFO", "msg": "[REDUNDANCY] primary rate-limited. Moving to next provider..."}
+{"time": "2026-04-25 22:36:30,365", "level": "INFO", "msg": "[TPM GUARD] Window ~3844 tokens used. Sleeping 16s before next call..."}
+{"time": "2026-04-25 22:36:48,303", "level": "INFO", "msg": "[OK] Tier 1 (secondary-fallback): ServiceResolution"}
+{"time": "2026-04-25 22:36:48,318", "level": "INFO", "msg": "[SERVICE RESOLVER] [OK] Resolved 3 services. Cached for 30 days."}
+{"time": "2026-04-25 22:36:48,318", "level": "INFO", "msg": "  Services resolved: 3"}
+{"time": "2026-04-25 22:36:48,318", "level": "INFO", "msg": "\n=== Running Phase 5: Dev Blueprint ==="}
+{"time": "2026-04-25 22:36:49,110", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-25 22:36:50,905", "level": "INFO", "msg": "[TPM GUARD] Window ~3831 tokens used. Sleeping 11s before next call..."}
+{"time": "2026-04-25 22:37:02,651", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/BlueprintOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-25 22:37:02,652", "level": "INFO", "msg": "[RETRY] primary rate-limited (attempt 1/2). Waiting 2s before retry..."}
+{"time": "2026-04-25 22:37:04,652", "level": "INFO", "msg": "[TPM GUARD] Window ~4093 tokens used. Sleeping 12s before next call..."}
+{"time": "2026-04-25 22:37:18,007", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/BlueprintOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-25 22:37:18,008", "level": "INFO", "msg": "[REDUNDANCY] primary rate-limited. Moving to next provider..."}
+{"time": "2026-04-25 22:37:33,008", "level": "INFO", "msg": "[TPM GUARD] Window ~4355 tokens used. Sleeping 16s before next call..."}
+{"time": "2026-04-25 22:37:51,002", "level": "INFO", "msg": "[WARN] Tier 1 failed (secondary-fallback/BlueprintOutput): Error code: 400 - {'error': {'message': \"Failed to call a function. Please adjust your prompt. See 'failed_generation' for more details.\", 'type': 'in"}
+{"time": "2026-04-25 22:37:51,002", "level": "INFO", "msg": "[RETRY] Tier 2: scanning error string for JSON blobs..."}
+{"time": "2026-04-25 22:37:51,005", "level": "INFO", "msg": "[RETRY] Tier 3: schema-injected plain text retry (secondary-fallback)..."}
+{"time": "2026-04-25 22:37:52,554", "level": "INFO", "msg": "[OK] Tier 3 (secondary-fallback): BlueprintOutput"}
+{"time": "2026-04-25 22:37:52,554", "level": "INFO", "msg": "\n=== Running Phase 5b: Step Generator ==="}
+{"time": "2026-04-25 22:37:52,554", "level": "INFO", "msg": "  Generated 13 build steps"}
+{"time": "2026-04-25 22:37:52,558", "level": "INFO", "msg": "\n=== Running Phase 5c: Prompt Engineer ==="}
+{"time": "2026-04-25 22:37:52,559", "level": "INFO", "msg": "[PROMPT ENGINEER] [OK] Enriched 13 build steps with exact context."}
+{"time": "2026-04-25 22:37:52,559", "level": "INFO", "msg": "  Enriched 13 build steps"}
+{"time": "2026-04-25 22:38:00,562", "level": "INFO", "msg": "\n=== Running Phase 6: Go-To-Market ==="}
+{"time": "2026-04-25 22:38:19,645", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-25 22:38:21,370", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/GTMOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-25 22:38:21,370", "level": "INFO", "msg": "[RETRY] primary rate-limited (attempt 1/2). Waiting 2s before retry..."}
+{"time": "2026-04-25 22:38:23,450", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/GTMOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-25 22:38:23,450", "level": "INFO", "msg": "[REDUNDANCY] primary rate-limited. Moving to next provider..."}
+{"time": "2026-04-25 22:38:38,451", "level": "INFO", "msg": "[TPM GUARD] Window ~4403 tokens used. Sleeping 12s before next call..."}
+{"time": "2026-04-25 22:38:52,114", "level": "INFO", "msg": "[OK] Tier 1 (secondary-fallback): GTMOutput"}
+{"time": "2026-04-25 22:38:52,116", "level": "INFO", "msg": "\n=== Running Phase 7: Business Model ==="}
+{"time": "2026-04-25 22:38:56,613", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-25 22:38:58,011", "level": "INFO", "msg": "[TPM GUARD] Window ~4296 tokens used. Sleeping 25s before next call..."}
+{"time": "2026-04-25 22:39:23,370", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/BusinessOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-25 22:39:23,370", "level": "INFO", "msg": "[RETRY] primary rate-limited (attempt 1/2). Waiting 2s before retry..."}
+{"time": "2026-04-25 22:39:25,451", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/BusinessOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-25 22:39:25,452", "level": "INFO", "msg": "[REDUNDANCY] primary rate-limited. Moving to next provider..."}
+{"time": "2026-04-25 22:39:41,305", "level": "INFO", "msg": "[WARN] Tier 1 failed (secondary-fallback/BusinessOutput): Error code: 400 - {'error': {'message': \"tool call validation failed: parameters for tool BusinessOutput did not match schema: errors: [`/pricing_tier"}
+{"time": "2026-04-25 22:39:41,306", "level": "INFO", "msg": "[RETRY] Tier 2: scanning error string for JSON blobs..."}
+{"time": "2026-04-25 22:39:41,307", "level": "INFO", "msg": "[OK] Tier 2 (JSON blob/secondary-fallback): BusinessOutput"}
+{"time": "2026-04-25 22:39:49,309", "level": "INFO", "msg": "\n=== Running Phase 8: Launch Roadmap ==="}
+{"time": "2026-04-25 22:39:51,020", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-25 22:39:53,064", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/RoadmapOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-25 22:39:53,064", "level": "INFO", "msg": "[RETRY] primary rate-limited (attempt 1/2). Waiting 2s before retry..."}
+{"time": "2026-04-25 22:39:55,065", "level": "INFO", "msg": "[TPM GUARD] Window ~4002 tokens used. Sleeping 30s before next call..."}
+{"time": "2026-04-25 22:40:25,299", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/RoadmapOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-25 22:40:25,299", "level": "INFO", "msg": "[REDUNDANCY] primary rate-limited. Moving to next provider..."}
+{"time": "2026-04-25 22:40:41,898", "level": "INFO", "msg": "[OK] Tier 1 (secondary-fallback): RoadmapOutput"}
+{"time": "2026-04-25 22:40:49,901", "level": "INFO", "msg": "\\n=== Running Phase 8.5: Final Verdict Composer ==="}
+{"time": "2026-04-25 22:40:50,573", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-25 22:40:53,357", "level": "INFO", "msg": "[OK] Tier 1 (primary): FinalVerdict"}
+{"time": "2026-04-25 22:40:53,361", "level": "INFO", "msg": "\n=== Running Phase 9: Docx Export ==="}
+{"time": "2026-04-25 22:40:53,629", "level": "INFO", "msg": "[DOCX EXPORTER] [OK] Build guide saved: outputs\\captio\\captio_build_guide.docx"}
+{"time": "2026-04-25 22:40:53,629", "level": "INFO", "msg": "  Docx saved: outputs\\captio\\captio_build_guide.docx"}
+{"time": "2026-04-26 16:17:58,873", "level": "INFO", "msg": "[OLLAMA] WARNING: Cannot reach http://localhost:11434 — All connection attempts failed. Set OLLAMA_MODEL= in .env to disable this check, or start Ollama."}
+{"time": "2026-04-26 16:22:33,784", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:22:36,940", "level": "INFO", "msg": "[OK] Tier 1 (primary): IntakeQuestionsOutput"}
+{"time": "2026-04-26 16:24:17,885", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:24:20,799", "level": "INFO", "msg": "[OK] Tier 1 (primary): SharpenIdeaOutput"}
+{"time": "2026-04-26 16:24:26,501", "level": "INFO", "msg": "\n=== Running Phase 1: Idea Analysis ==="}
+{"time": "2026-04-26 16:24:27,391", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:24:31,640", "level": "INFO", "msg": "[OK] Tier 1 (primary): IdeaOutput"}
+{"time": "2026-04-26 16:24:31,646", "level": "INFO", "msg": "\n=== Running Phase 1b: Feature Decomposition ==="}
+{"time": "2026-04-26 16:24:32,522", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:24:36,659", "level": "INFO", "msg": "[OK] Tier 1 (primary): FeatureBundle"}
+{"time": "2026-04-26 16:24:36,662", "level": "INFO", "msg": "[FEATURE AGENT] [OK] Decomposed into 5 features. MVP: ['Registration', 'Video Upload', 'Auto Captioning']"}
+{"time": "2026-04-26 16:24:36,663", "level": "INFO", "msg": "  Features: ['Registration', 'Video Upload', 'Auto Captioning', 'Caption Editing', 'Text Styles']"}
+{"time": "2026-04-26 16:24:36,663", "level": "INFO", "msg": "  Features: ['Registration', 'Video Upload', 'Auto Captioning', 'Caption Editing', 'Text Styles']"}
+{"time": "2026-04-26 16:24:36,663", "level": "INFO", "msg": "\n=== Running Phase 2: Market Research ==="}
+{"time": "2026-04-26 16:24:52,877", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:24:55,107", "level": "INFO", "msg": "[OK] Tier 1 (primary): CompetitorNamesOutput"}
+{"time": "2026-04-26 16:25:25,101", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:25:26,779", "level": "INFO", "msg": "[TPM GUARD] Window ~2993 tokens used. Sleeping 4s before next call..."}
+{"time": "2026-04-26 16:25:32,890", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/MarketOutput): 5 validation errors for MarketOutput\ncompetitors.0.url\n  Value error, Competitor URL must be a real http link. If you cannot find one, do not include "}
+{"time": "2026-04-26 16:25:32,893", "level": "INFO", "msg": "[RETRY] Tier 2: scanning error string for JSON blobs..."}
+{"time": "2026-04-26 16:25:32,894", "level": "INFO", "msg": "[RETRY] Tier 3: schema-injected plain text retry (primary)..."}
+{"time": "2026-04-26 16:25:35,167", "level": "INFO", "msg": "[OK] Tier 3 (primary): MarketOutput"}
+{"time": "2026-04-26 16:25:35,169", "level": "INFO", "msg": "\n=== Running USP Agent: Finding uncovered gap ==="}
+{"time": "2026-04-26 16:25:36,098", "level": "INFO", "msg": "[USP AGENT] STARVATION: market_output has 0 complaints AND 0 competitors. Market agent likely hit a rate limit or parse error. Returning starvation USP — verdict will reflect missing data."}
+{"time": "2026-04-26 16:25:36,098", "level": "INFO", "msg": "  USP gap_found: False | Research data unavailable — market scan returned empty results (likely Groq rate"}
+{"time": "2026-04-26 16:25:36,104", "level": "INFO", "msg": "\n=== Running Phase 3: Verdict ==="}
+{"time": "2026-04-26 16:25:39,288", "level": "INFO", "msg": "VERDICT SCORES: {'market_proof': 0, 'competition': 25, 'total': 25}"}
+{"time": "2026-04-26 16:25:47,291", "level": "INFO", "msg": "\n=== Running Phase 4: Technical R&D ==="}
+{"time": "2026-04-26 16:25:53,961", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:25:56,471", "level": "INFO", "msg": "[OK] Tier 1 (primary): TechOutput"}
+{"time": "2026-04-26 16:26:04,476", "level": "INFO", "msg": "\n=== Running Phase 4b: Service Resolver ==="}
+{"time": "2026-04-26 16:26:04,477", "level": "INFO", "msg": "[SERVICE RESOLVER] Resolving 4 infra needs via Tavily..."}
+{"time": "2026-04-26 16:26:04,477", "level": "INFO", "msg": "[QUOTA] OK: 30/1000 Tavily calls this month."}
+{"time": "2026-04-26 16:26:05,331", "level": "INFO", "msg": "  → Resolving: user authentication JWT"}
+{"time": "2026-04-26 16:26:06,761", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:26:09,130", "level": "INFO", "msg": "[OK] Tier 1 (primary): ServiceResolution"}
+{"time": "2026-04-26 16:26:09,134", "level": "INFO", "msg": "  → Resolving: payment gateway India"}
+{"time": "2026-04-26 16:26:10,333", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:26:12,634", "level": "INFO", "msg": "[OK] Tier 1 (primary): ServiceResolution"}
+{"time": "2026-04-26 16:26:12,644", "level": "INFO", "msg": "  → Resolving: database hosting free tier"}
+{"time": "2026-04-26 16:26:14,198", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:26:16,473", "level": "INFO", "msg": "[OK] Tier 1 (primary): ServiceResolution"}
+{"time": "2026-04-26 16:26:16,477", "level": "INFO", "msg": "  → Resolving: push notifications free tier"}
+{"time": "2026-04-26 16:26:18,003", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:26:19,715", "level": "INFO", "msg": "[TPM GUARD] Window ~4899 tokens used. Sleeping 13s before next call..."}
+{"time": "2026-04-26 16:26:33,744", "level": "INFO", "msg": "[OK] Tier 1 (primary): ServiceResolution"}
+{"time": "2026-04-26 16:26:33,754", "level": "INFO", "msg": "[SERVICE RESOLVER] [OK] Resolved 4 services. Cached for 30 days."}
+{"time": "2026-04-26 16:26:33,754", "level": "INFO", "msg": "  Services resolved: 4"}
+{"time": "2026-04-26 16:26:33,757", "level": "INFO", "msg": "\n=== Running Phase 5: Dev Blueprint ==="}
+{"time": "2026-04-26 16:26:34,628", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:26:38,796", "level": "INFO", "msg": "[OK] Tier 1 (primary): BlueprintOutput"}
+{"time": "2026-04-26 16:26:38,801", "level": "INFO", "msg": "\n=== Running Phase 5b: Step Generator ==="}
+{"time": "2026-04-26 16:26:38,802", "level": "INFO", "msg": "  Generated 11 build steps"}
+{"time": "2026-04-26 16:26:38,803", "level": "INFO", "msg": "\n=== Running Phase 5c: Prompt Engineer ==="}
+{"time": "2026-04-26 16:26:38,845", "level": "INFO", "msg": "[PROMPT ENGINEER] [OK] Enriched 11 build steps with exact context."}
+{"time": "2026-04-26 16:26:38,845", "level": "INFO", "msg": "  Enriched 11 build steps"}
+{"time": "2026-04-26 16:26:46,847", "level": "INFO", "msg": "\n=== Running Phase 6: Go-To-Market ==="}
+{"time": "2026-04-26 16:26:50,351", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:26:51,968", "level": "INFO", "msg": "[TPM GUARD] Window ~4259 tokens used. Sleeping 6s before next call..."}
+{"time": "2026-04-26 16:26:59,111", "level": "INFO", "msg": "[OK] Tier 1 (primary): GTMOutput"}
+{"time": "2026-04-26 16:26:59,115", "level": "INFO", "msg": "\n=== Running Phase 7: Business Model ==="}
+{"time": "2026-04-26 16:27:01,309", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:27:02,928", "level": "INFO", "msg": "[TPM GUARD] Window ~4514 tokens used. Sleeping 8s before next call..."}
+{"time": "2026-04-26 16:27:11,640", "level": "INFO", "msg": "[OK] Tier 1 (primary): BusinessOutput"}
+{"time": "2026-04-26 16:27:19,687", "level": "INFO", "msg": "\n=== Running Phase 8: Launch Roadmap ==="}
+{"time": "2026-04-26 16:27:21,543", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:27:23,170", "level": "INFO", "msg": "[TPM GUARD] Window ~4269 tokens used. Sleeping 12s before next call..."}
+{"time": "2026-04-26 16:27:36,591", "level": "INFO", "msg": "[OK] Tier 1 (primary): RoadmapOutput"}
+{"time": "2026-04-26 16:27:44,597", "level": "INFO", "msg": "\\n=== Running Phase 8.5: Final Verdict Composer ==="}
+{"time": "2026-04-26 16:27:45,115", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:27:46,917", "level": "INFO", "msg": "[OK] Tier 1 (primary): FinalVerdict"}
+{"time": "2026-04-26 16:27:46,921", "level": "INFO", "msg": "\n=== Running Phase 9: Docx Export ==="}
+{"time": "2026-04-26 16:27:47,228", "level": "INFO", "msg": "[DOCX EXPORTER] [OK] Build guide saved: outputs\\autocaption\\autocaption_build_guide.docx"}
+{"time": "2026-04-26 16:27:47,228", "level": "INFO", "msg": "  Docx saved: outputs\\autocaption\\autocaption_build_guide.docx"}
+{"time": "2026-04-26 16:30:27,587", "level": "INFO", "msg": "[OLLAMA] WARNING: Cannot reach http://localhost:11434 — All connection attempts failed. Set OLLAMA_MODEL= in .env to disable this check, or start Ollama."}
+{"time": "2026-04-26 16:30:32,225", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:30:35,061", "level": "INFO", "msg": "[OK] Tier 1 (primary): SharpenIdeaOutput"}
+{"time": "2026-04-26 16:30:40,909", "level": "INFO", "msg": "\n=== Running Phase 1: Idea Analysis ==="}
+{"time": "2026-04-26 16:30:41,847", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:30:46,418", "level": "INFO", "msg": "[OK] Tier 1 (primary): IdeaOutput"}
+{"time": "2026-04-26 16:30:46,426", "level": "INFO", "msg": "\n=== Running Phase 1b: Feature Decomposition ==="}
+{"time": "2026-04-26 16:30:47,400", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:30:51,070", "level": "INFO", "msg": "[OK] Tier 1 (primary): FeatureBundle"}
+{"time": "2026-04-26 16:30:51,075", "level": "INFO", "msg": "[FEATURE AGENT] [OK] Decomposed into 6 features. MVP: ['Registration', 'Login', 'Caption Generation']"}
+{"time": "2026-04-26 16:30:51,075", "level": "INFO", "msg": "  Features: ['Registration', 'Login', 'Caption Generation', 'Caption Editing', 'Text Styles', 'Timeline Editing']"}
+{"time": "2026-04-26 16:30:51,076", "level": "INFO", "msg": "  Features: ['Registration', 'Login', 'Caption Generation', 'Caption Editing', 'Text Styles', 'Timeline Editing']"}
+{"time": "2026-04-26 16:30:51,077", "level": "INFO", "msg": "\n=== Running Phase 2: Market Research ==="}
+{"time": "2026-04-26 16:30:57,674", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:30:59,977", "level": "INFO", "msg": "[OK] Tier 1 (primary): CompetitorNamesOutput"}
+{"time": "2026-04-26 16:31:06,976", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:31:10,172", "level": "INFO", "msg": "[OK] Tier 1 (primary): MarketOutput"}
+{"time": "2026-04-26 16:31:10,177", "level": "INFO", "msg": "\n=== Running USP Agent: Finding uncovered gap ==="}
+{"time": "2026-04-26 16:31:11,117", "level": "INFO", "msg": "[USP AGENT] STARVATION: market_output has 0 complaints AND 0 competitors. Market agent likely hit a rate limit or parse error. Returning starvation USP — verdict will reflect missing data."}
+{"time": "2026-04-26 16:31:11,117", "level": "INFO", "msg": "  USP gap_found: False | Research data unavailable — market scan returned empty results (likely Groq rate"}
+{"time": "2026-04-26 16:31:11,117", "level": "INFO", "msg": "\n=== Running Phase 3: Verdict ==="}
+{"time": "2026-04-26 16:31:13,384", "level": "INFO", "msg": "VERDICT SCORES: {'market_proof': 0, 'competition': 25, 'total': 25}"}
+{"time": "2026-04-26 16:31:21,391", "level": "INFO", "msg": "\n=== Running Phase 4: Technical R&D ==="}
+{"time": "2026-04-26 16:31:28,165", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:31:29,950", "level": "INFO", "msg": "[TPM GUARD] Window ~4734 tokens used. Sleeping 6s before next call..."}
+{"time": "2026-04-26 16:31:39,382", "level": "INFO", "msg": "[OK] Tier 1 (primary): TechOutput"}
+{"time": "2026-04-26 16:31:47,386", "level": "INFO", "msg": "\n=== Running Phase 4b: Service Resolver ==="}
+{"time": "2026-04-26 16:31:47,388", "level": "INFO", "msg": "[SERVICE RESOLVER] Cache HIT — skipping Tavily (3 needs)."}
+{"time": "2026-04-26 16:31:47,388", "level": "INFO", "msg": "  Services resolved: 3"}
+{"time": "2026-04-26 16:31:47,390", "level": "INFO", "msg": "\n=== Running Phase 5: Dev Blueprint ==="}
+{"time": "2026-04-26 16:31:48,161", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:31:52,707", "level": "INFO", "msg": "[OK] Tier 1 (primary): BlueprintOutput"}
+{"time": "2026-04-26 16:31:52,711", "level": "INFO", "msg": "\n=== Running Phase 5b: Step Generator ==="}
+{"time": "2026-04-26 16:31:52,713", "level": "INFO", "msg": "  Generated 8 build steps"}
+{"time": "2026-04-26 16:31:52,714", "level": "INFO", "msg": "\n=== Running Phase 5c: Prompt Engineer ==="}
+{"time": "2026-04-26 16:31:52,715", "level": "INFO", "msg": "[PROMPT ENGINEER] [OK] Enriched 8 build steps with exact context."}
+{"time": "2026-04-26 16:31:52,715", "level": "INFO", "msg": "  Enriched 8 build steps"}
+{"time": "2026-04-26 16:32:00,717", "level": "INFO", "msg": "\n=== Running Phase 6: Go-To-Market ==="}
+{"time": "2026-04-26 16:32:04,024", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:32:05,664", "level": "INFO", "msg": "[TPM GUARD] Window ~4452 tokens used. Sleeping 5s before next call..."}
+{"time": "2026-04-26 16:32:12,696", "level": "INFO", "msg": "[OK] Tier 1 (primary): GTMOutput"}
+{"time": "2026-04-26 16:32:12,701", "level": "INFO", "msg": "\n=== Running Phase 7: Business Model ==="}
+{"time": "2026-04-26 16:32:14,733", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:32:17,881", "level": "INFO", "msg": "[OK] Tier 1 (primary): BusinessOutput"}
+{"time": "2026-04-26 16:32:25,887", "level": "INFO", "msg": "\n=== Running Phase 8: Launch Roadmap ==="}
+{"time": "2026-04-26 16:32:27,671", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:32:29,267", "level": "INFO", "msg": "[TPM GUARD] Window ~4897 tokens used. Sleeping 9s before next call..."}
+{"time": "2026-04-26 16:32:39,959", "level": "INFO", "msg": "[OK] Tier 1 (primary): RoadmapOutput"}
+{"time": "2026-04-26 16:32:47,965", "level": "INFO", "msg": "\\n=== Running Phase 8.5: Final Verdict Composer ==="}
+{"time": "2026-04-26 16:32:48,750", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:32:51,146", "level": "INFO", "msg": "[OK] Tier 1 (primary): FinalVerdict"}
+{"time": "2026-04-26 16:32:51,152", "level": "INFO", "msg": "\n=== Running Phase 9: Docx Export ==="}
+{"time": "2026-04-26 16:32:51,373", "level": "INFO", "msg": "[DOCX EXPORTER] [OK] Build guide saved: outputs\\autocaption\\autocaption_build_guide.docx"}
+{"time": "2026-04-26 16:32:51,376", "level": "INFO", "msg": "  Docx saved: outputs\\autocaption\\autocaption_build_guide.docx"}
+{"time": "2026-04-26 16:37:21,852", "level": "INFO", "msg": "Testing search tool with query: 'top project management apps 2026 competitors'...\n"}
+{"time": "2026-04-26 16:37:23,341", "level": "INFO", "msg": "Hacker News: No results found.\n\nReddit Database: skipped (Credentials missing or invalid).\n\nTavily Error: This request exceeds your plan's set usage limit. Please upgrade your plan or contact support@tavily.com"}
+{"time": "2026-04-26 16:38:39,049", "level": "INFO", "msg": "Testing pipeline with idea: A subscription-based water delivery app for apartment complexes in Bangalore."}
+{"time": "2026-04-26 16:38:39,049", "level": "INFO", "msg": "\n--- Testing Idea Agent ---"}
+{"time": "2026-04-26 16:38:39,802", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:38:44,119", "level": "INFO", "msg": "[OK] Tier 1 (primary): IdeaOutput"}
+{"time": "2026-04-26 16:38:44,121", "level": "INFO", "msg": "Idea Agent SUCCESS: Aquagenie"}
+{"time": "2026-04-26 16:38:44,121", "level": "INFO", "msg": "\n--- Testing Feature Agent ---"}
+{"time": "2026-04-26 16:38:44,702", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:38:47,666", "level": "INFO", "msg": "[OK] Tier 1 (primary): FeatureBundle"}
+{"time": "2026-04-26 16:38:47,668", "level": "INFO", "msg": "[FEATURE AGENT] [OK] Decomposed into 5 features. MVP: ['Registration', 'Subscription Management', 'Water Delivery Scheduling', 'Payment Gateway Integration']"}
+{"time": "2026-04-26 16:38:47,668", "level": "INFO", "msg": "  Features: ['Registration', 'Profile Management', 'Subscription Management', 'Water Delivery Scheduling', 'Payment Gateway Integration']"}
+{"time": "2026-04-26 16:38:47,668", "level": "INFO", "msg": "Feature Agent SUCCESS: 5 features found."}
+{"time": "2026-04-26 16:38:47,668", "level": "INFO", "msg": "\n--- Testing Research Agent ---"}
+{"time": "2026-04-26 16:38:52,915", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:38:54,429", "level": "INFO", "msg": "[OK] Tier 1 (primary): CompetitorNamesOutput"}
+{"time": "2026-04-26 16:39:00,067", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:39:02,444", "level": "INFO", "msg": "[OK] Tier 1 (primary): MarketOutput"}
+{"time": "2026-04-26 16:39:02,446", "level": "INFO", "msg": "Research Agent SUCCESS: 0 competitors, 0 complaints."}
+{"time": "2026-04-26 16:39:02,447", "level": "INFO", "msg": "\n--- Testing USP Agent ---"}
+{"time": "2026-04-26 16:39:03,023", "level": "INFO", "msg": "[USP AGENT] STARVATION: market_output has 0 complaints AND 0 competitors. Market agent likely hit a rate limit or parse error. Returning starvation USP — verdict will reflect missing data."}
+{"time": "2026-04-26 16:39:03,024", "level": "INFO", "msg": "USP Agent SUCCESS: gap_found=False, USP=Research data unavailable — market scan returned empty results (likely Groq rate limit). Re-run in 60 seconds for accurate analysis."}
+{"time": "2026-04-26 16:39:03,024", "level": "INFO", "msg": "\n--- Testing Verdict Agent ---"}
+{"time": "2026-04-26 16:39:04,657", "level": "INFO", "msg": "VERDICT SCORES: {'market_proof': 0, 'competition': 25, 'total': 25}"}
+{"time": "2026-04-26 16:39:04,658", "level": "INFO", "msg": "Verdict Agent SUCCESS: SKIP (Score: 0)"}
+{"time": "2026-04-26 16:39:04,658", "level": "INFO", "msg": "\n--- Testing Technical Agent ---"}
+{"time": "2026-04-26 16:39:10,048", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:39:11,183", "level": "INFO", "msg": "[TPM GUARD] Window ~4257 tokens used. Sleeping 32s before next call..."}
+{"time": "2026-04-26 16:39:44,988", "level": "INFO", "msg": "[OK] Tier 1 (primary): TechOutput"}
+{"time": "2026-04-26 16:39:44,991", "level": "INFO", "msg": "Technical Agent SUCCESS: Stack={'auth': 'None', 'backend': 'None', 'database': 'None', 'frontend': 'None', 'payments': 'Razorpay', 'storage': 'None'}"}
+{"time": "2026-04-26 16:40:57,028", "level": "INFO", "msg": "Testing pipeline with idea: A subscription-based water delivery app for apartment complexes in Bangalore."}
+{"time": "2026-04-26 16:40:57,029", "level": "INFO", "msg": "\n--- Testing Idea Agent ---"}
+{"time": "2026-04-26 16:40:57,771", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:41:02,985", "level": "INFO", "msg": "[OK] Tier 1 (primary): IdeaOutput"}
+{"time": "2026-04-26 16:41:02,988", "level": "INFO", "msg": "Idea Agent SUCCESS: Aquasub"}
+{"time": "2026-04-26 16:41:02,988", "level": "INFO", "msg": "\n--- Testing Feature Agent ---"}
+{"time": "2026-04-26 16:41:03,578", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:41:06,181", "level": "INFO", "msg": "[OK] Tier 1 (primary): FeatureBundle"}
+{"time": "2026-04-26 16:41:06,183", "level": "INFO", "msg": "[FEATURE AGENT] [OK] Decomposed into 5 features. MVP: ['Auth', 'Subscription', 'Water Delivery']"}
+{"time": "2026-04-26 16:41:06,183", "level": "INFO", "msg": "  Features: ['Auth', 'Profile', 'Subscription', 'Water Delivery', 'Payment History']"}
+{"time": "2026-04-26 16:41:06,184", "level": "INFO", "msg": "Feature Agent SUCCESS: 5 features found."}
+{"time": "2026-04-26 16:41:06,184", "level": "INFO", "msg": "\n--- Testing Research Agent ---"}
+{"time": "2026-04-26 16:41:11,526", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:41:13,117", "level": "INFO", "msg": "[OK] Tier 1 (primary): CompetitorNamesOutput"}
+{"time": "2026-04-26 16:41:19,593", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:41:22,828", "level": "INFO", "msg": "[OK] Tier 1 (primary): MarketOutput"}
+{"time": "2026-04-26 16:41:22,830", "level": "INFO", "msg": "Research Agent SUCCESS: 0 competitors, 0 complaints."}
+{"time": "2026-04-26 16:41:22,830", "level": "INFO", "msg": "\n--- Testing USP Agent ---"}
+{"time": "2026-04-26 16:41:23,419", "level": "INFO", "msg": "[USP AGENT] STARVATION: market_output has 0 complaints AND 0 competitors. Market agent likely hit a rate limit or parse error. Returning starvation USP — verdict will reflect missing data."}
+{"time": "2026-04-26 16:41:23,419", "level": "INFO", "msg": "USP Agent SUCCESS: gap_found=False, USP=Research data unavailable — market scan returned empty results (likely Groq rate limit). Re-run in 60 seconds for accurate analysis."}
+{"time": "2026-04-26 16:41:23,419", "level": "INFO", "msg": "\n--- Testing Verdict Agent ---"}
+{"time": "2026-04-26 16:41:25,132", "level": "INFO", "msg": "VERDICT SCORES: {'market_proof': 0, 'competition': 25, 'total': 25}"}
+{"time": "2026-04-26 16:41:25,133", "level": "INFO", "msg": "Verdict Agent SUCCESS: SKIP (Score: 0)"}
+{"time": "2026-04-26 16:41:25,133", "level": "INFO", "msg": "\n--- Testing Technical Agent ---"}
+{"time": "2026-04-26 16:41:31,050", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:41:32,209", "level": "INFO", "msg": "[TPM GUARD] Window ~4243 tokens used. Sleeping 29s before next call..."}
+{"time": "2026-04-26 16:42:01,609", "level": "INFO", "msg": "[OK] Tier 1 (primary): TechOutput"}
+{"time": "2026-04-26 16:42:01,612", "level": "INFO", "msg": "Technical Agent SUCCESS: Stack={'auth': 'Supabase Auth or Firebase Auth', 'backend': 'Node.js (Express) or Python (FastAPI)', 'database': 'Supabase (PostgreSQL) or MongoDB Atlas', 'frontend': 'React.js (Next.js)', 'payments': 'Razorpay', 'storage': 'Cloudinary or Supabase Storage'}"}
+{"time": "2026-04-26 16:43:07,168", "level": "INFO", "msg": "Testing pipeline with idea: A subscription-based water delivery app for apartment complexes in Bangalore."}
+{"time": "2026-04-26 16:43:07,168", "level": "INFO", "msg": "\n--- Testing Idea Agent ---"}
+{"time": "2026-04-26 16:43:07,866", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:43:11,735", "level": "INFO", "msg": "[OK] Tier 1 (primary): IdeaOutput"}
+{"time": "2026-04-26 16:43:11,738", "level": "INFO", "msg": "Idea Agent SUCCESS: Aquafresh"}
+{"time": "2026-04-26 16:43:11,738", "level": "INFO", "msg": "\n--- Testing Feature Agent ---"}
+{"time": "2026-04-26 16:43:12,289", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:43:14,916", "level": "INFO", "msg": "[OK] Tier 1 (primary): FeatureBundle"}
+{"time": "2026-04-26 16:43:14,918", "level": "INFO", "msg": "[FEATURE AGENT] [OK] Decomposed into 5 features. MVP: ['Authentication', 'Profile Management', 'Subscription Management', 'Order Management', 'Payment Gateway']"}
+{"time": "2026-04-26 16:43:14,918", "level": "INFO", "msg": "  Features: ['Authentication', 'Profile Management', 'Subscription Management', 'Order Management', 'Payment Gateway']"}
+{"time": "2026-04-26 16:43:14,918", "level": "INFO", "msg": "Feature Agent SUCCESS: 5 features found."}
+{"time": "2026-04-26 16:43:14,918", "level": "INFO", "msg": "\n--- Testing Research Agent ---"}
+{"time": "2026-04-26 16:43:20,319", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:43:21,829", "level": "INFO", "msg": "[OK] Tier 1 (primary): CompetitorNamesOutput"}
+{"time": "2026-04-26 16:43:28,215", "level": "INFO", "msg": "[RESEARCH AGENT] Web search (Tavily) quota exhausted. Research data is incomplete."}
+{"time": "2026-04-26 16:43:28,218", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:43:30,764", "level": "INFO", "msg": "[OK] Tier 1 (primary): MarketOutput"}
+{"time": "2026-04-26 16:43:30,767", "level": "INFO", "msg": "Research Agent SUCCESS: 0 competitors, 0 complaints."}
+{"time": "2026-04-26 16:43:30,768", "level": "INFO", "msg": "\n--- Testing USP Agent ---"}
+{"time": "2026-04-26 16:43:31,323", "level": "INFO", "msg": "[USP AGENT] PARTIAL DATA: Web search failed, but proceeding with simulated USP based on common friction."}
+{"time": "2026-04-26 16:43:31,323", "level": "INFO", "msg": "[USP AGENT] Uncovered complaints: ['Users hate hidden delivery charges and unpredictable delivery times for water cans.']"}
+{"time": "2026-04-26 16:43:31,324", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:43:33,072", "level": "INFO", "msg": "[OK] Tier 1 (primary): USPOutput"}
+{"time": "2026-04-26 16:43:33,074", "level": "INFO", "msg": "[USP AGENT] USP: Transparent delivery charges for Rohan."}
+{"time": "2026-04-26 16:43:33,074", "level": "INFO", "msg": "USP Agent SUCCESS: gap_found=True, USP=Transparent delivery charges for Rohan."}
+{"time": "2026-04-26 16:43:33,074", "level": "INFO", "msg": "\n--- Testing Verdict Agent ---"}
+{"time": "2026-04-26 16:43:34,804", "level": "INFO", "msg": "VERDICT SCORES: {'market_proof': 0, 'competition': 25, 'total': 25}"}
+{"time": "2026-04-26 16:43:34,805", "level": "INFO", "msg": "[VERDICT AGENT] Warning: Zero market proof but research was partial. Giving benefit of doubt."}
+{"time": "2026-04-26 16:43:34,806", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:43:35,956", "level": "INFO", "msg": "[TPM GUARD] Window ~4949 tokens used. Sleeping 35s before next call..."}
+{"time": "2026-04-26 16:44:11,321", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/VerdictOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 16:44:11,322", "level": "INFO", "msg": "[RETRY] primary rate-limited (attempt 1/2). Waiting 2s before retry..."}
+{"time": "2026-04-26 16:44:13,323", "level": "INFO", "msg": "[TPM GUARD] Window ~4852 tokens used. Sleeping 2s before next call..."}
+{"time": "2026-04-26 16:44:16,530", "level": "INFO", "msg": "[OK] Tier 1 (primary): VerdictOutput"}
+{"time": "2026-04-26 16:44:16,530", "level": "INFO", "msg": "Verdict Agent SUCCESS: BUILD (Score: 8)"}
+{"time": "2026-04-26 16:44:16,531", "level": "INFO", "msg": "\n--- Testing Technical Agent ---"}
+{"time": "2026-04-26 16:44:21,793", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:44:22,925", "level": "INFO", "msg": "[TPM GUARD] Window ~4696 tokens used. Sleeping 8s before next call..."}
+{"time": "2026-04-26 16:44:31,549", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/TechOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 16:44:31,550", "level": "INFO", "msg": "[RETRY] primary rate-limited (attempt 1/2). Waiting 2s before retry..."}
+{"time": "2026-04-26 16:44:33,626", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/TechOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 16:44:33,626", "level": "INFO", "msg": "[REDUNDANCY] primary rate-limited. Moving to next provider..."}
+{"time": "2026-04-26 16:44:48,627", "level": "INFO", "msg": "[TPM GUARD] Window ~4196 tokens used. Sleeping 24s before next call..."}
+{"time": "2026-04-26 16:45:13,658", "level": "INFO", "msg": "[OK] Tier 1 (secondary-fallback): TechOutput"}
+{"time": "2026-04-26 16:45:13,658", "level": "INFO", "msg": "Technical Agent SUCCESS: Stack={'auth': 'Fast2SMS', 'backend': 'Node.js', 'database': 'MongoDB', 'frontend': 'React', 'payments': 'Razorpay', 'storage': 'AWS S3'}"}
+{"time": "2026-04-26 16:46:23,331", "level": "INFO", "msg": "\n=== Running Phase 1: Idea Analysis ==="}
+{"time": "2026-04-26 16:46:24,037", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:46:25,448", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/IdeaOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 16:46:25,448", "level": "INFO", "msg": "[RETRY] primary rate-limited (attempt 1/2). Waiting 2s before retry..."}
+{"time": "2026-04-26 16:46:27,751", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/IdeaOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 16:46:27,752", "level": "INFO", "msg": "[REDUNDANCY] primary rate-limited. Moving to next provider..."}
+{"time": "2026-04-26 16:46:43,888", "level": "INFO", "msg": "[OK] Tier 1 (secondary-fallback): IdeaOutput"}
+{"time": "2026-04-26 16:46:43,889", "level": "INFO", "msg": "\n=== Running Phase 1b: Feature Decomposition ==="}
+{"time": "2026-04-26 16:46:44,432", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:46:46,234", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/FeatureBundle): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 16:46:46,235", "level": "INFO", "msg": "[RETRY] primary rate-limited (attempt 1/2). Waiting 2s before retry..."}
+{"time": "2026-04-26 16:46:48,309", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/FeatureBundle): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 16:46:48,309", "level": "INFO", "msg": "[REDUNDANCY] primary rate-limited. Moving to next provider..."}
+{"time": "2026-04-26 16:47:03,309", "level": "INFO", "msg": "[TPM GUARD] Window ~4964 tokens used. Sleeping 24s before next call..."}
+{"time": "2026-04-26 16:47:28,882", "level": "INFO", "msg": "[OK] Tier 1 (secondary-fallback): FeatureBundle"}
+{"time": "2026-04-26 16:47:28,882", "level": "INFO", "msg": "[FEATURE AGENT] [OK] Decomposed into 5 features. MVP: ['auth', 'teammate_finder']"}
+{"time": "2026-04-26 16:47:28,882", "level": "INFO", "msg": "  Features: ['auth', 'profile', 'teammate_finder', 'book_market', 'opportunity_sharing']"}
+{"time": "2026-04-26 16:47:28,882", "level": "INFO", "msg": "  Features: ['auth', 'profile', 'teammate_finder', 'book_market', 'opportunity_sharing']"}
+{"time": "2026-04-26 16:47:28,883", "level": "INFO", "msg": "\n=== Running Phase 2: Market Research ==="}
+{"time": "2026-04-26 16:47:34,121", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:47:35,453", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/CompetitorNamesOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 16:47:35,454", "level": "INFO", "msg": "[RETRY] primary rate-limited (attempt 1/2). Waiting 2s before retry..."}
+{"time": "2026-04-26 16:47:37,779", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/CompetitorNamesOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 16:47:37,779", "level": "INFO", "msg": "[REDUNDANCY] primary rate-limited. Moving to next provider..."}
+{"time": "2026-04-26 16:47:53,108", "level": "INFO", "msg": "[OK] Tier 1 (secondary-fallback): CompetitorNamesOutput"}
+{"time": "2026-04-26 16:48:23,705", "level": "INFO", "msg": "[RESEARCH AGENT] Web search (Tavily) quota exhausted. Research data is incomplete."}
+{"time": "2026-04-26 16:48:23,707", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:48:25,145", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/MarketOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 16:48:25,146", "level": "INFO", "msg": "[RETRY] primary rate-limited (attempt 1/2). Waiting 2s before retry..."}
+{"time": "2026-04-26 16:48:27,146", "level": "INFO", "msg": "[TPM GUARD] Window ~4762 tokens used. Sleeping 2s before next call..."}
+{"time": "2026-04-26 16:48:29,267", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/MarketOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 16:48:29,267", "level": "INFO", "msg": "[REDUNDANCY] primary rate-limited. Moving to next provider..."}
+{"time": "2026-04-26 16:48:44,268", "level": "INFO", "msg": "[TPM GUARD] Window ~5556 tokens used. Sleeping 11s before next call..."}
+{"time": "2026-04-26 16:48:56,128", "level": "INFO", "msg": "[WARN] Tier 1 failed (secondary-fallback/MarketOutput): Error code: 400 - {'error': {'message': 'tool call validation failed: parameters for tool MarketOutput did not match schema: errors: [`/user_complaint"}
+{"time": "2026-04-26 16:48:56,128", "level": "INFO", "msg": "[RETRY] Tier 2: scanning error string for JSON blobs..."}
+{"time": "2026-04-26 16:48:56,130", "level": "INFO", "msg": "[OK] Tier 2 (JSON blob/secondary-fallback): MarketOutput"}
+{"time": "2026-04-26 16:48:56,131", "level": "INFO", "msg": "\n=== Running USP Agent: Finding uncovered gap ==="}
+{"time": "2026-04-26 16:48:56,692", "level": "INFO", "msg": "[USP AGENT] PARTIAL DATA: Web search failed, but proceeding with simulated USP based on common friction."}
+{"time": "2026-04-26 16:48:56,692", "level": "INFO", "msg": "[USP AGENT] Uncovered complaints: ['Users hate hidden delivery charges and unpredictable delivery times for water cans.']"}
+{"time": "2026-04-26 16:48:56,694", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:48:57,850", "level": "INFO", "msg": "[TPM GUARD] Window ~7587 tokens used. Sleeping 29s before next call..."}
+{"time": "2026-04-26 16:49:27,006", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/USPOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 16:49:27,006", "level": "INFO", "msg": "[RETRY] primary rate-limited (attempt 1/2). Waiting 2s before retry..."}
+{"time": "2026-04-26 16:49:29,007", "level": "INFO", "msg": "[TPM GUARD] Window ~5495 tokens used. Sleeping 2s before next call..."}
+{"time": "2026-04-26 16:49:31,260", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/USPOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 16:49:31,260", "level": "INFO", "msg": "[REDUNDANCY] primary rate-limited. Moving to next provider..."}
+{"time": "2026-04-26 16:49:46,693", "level": "INFO", "msg": "[OK] Tier 1 (secondary-fallback): USPOutput"}
+{"time": "2026-04-26 16:49:46,694", "level": "INFO", "msg": "[USP AGENT] USP: Transparent delivery charges for Aakash."}
+{"time": "2026-04-26 16:49:46,695", "level": "INFO", "msg": "  USP gap_found: True | Transparent delivery charges for Aakash."}
+{"time": "2026-04-26 16:49:46,697", "level": "INFO", "msg": "\n=== Running Phase 3: Verdict ==="}
+{"time": "2026-04-26 16:49:48,914", "level": "INFO", "msg": "VERDICT SCORES: {'market_proof': 0, 'competition': 25, 'total': 25}"}
+{"time": "2026-04-26 16:49:48,914", "level": "INFO", "msg": "[VERDICT AGENT] Warning: Zero market proof but research was partial. Giving benefit of doubt."}
+{"time": "2026-04-26 16:49:48,917", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:49:50,459", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/VerdictOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 16:49:50,459", "level": "INFO", "msg": "[RETRY] primary rate-limited (attempt 1/2). Waiting 2s before retry..."}
+{"time": "2026-04-26 16:49:52,459", "level": "INFO", "msg": "[TPM GUARD] Window ~4857 tokens used. Sleeping 4s before next call..."}
+{"time": "2026-04-26 16:49:57,054", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/VerdictOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 16:49:57,054", "level": "INFO", "msg": "[REDUNDANCY] primary rate-limited. Moving to next provider..."}
+{"time": "2026-04-26 16:50:12,720", "level": "INFO", "msg": "[OK] Tier 1 (secondary-fallback): VerdictOutput"}
+{"time": "2026-04-26 16:50:20,722", "level": "INFO", "msg": "\\n=== Running Phase 3.5: Kill Condition ==="}
+{"time": "2026-04-26 16:50:21,357", "level": "INFO", "msg": "\n--- KILL CONDITION RESEARCH FOR Inter-College Connect ---"}
+{"time": "2026-04-26 16:50:21,358", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:50:22,787", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/KillConditionOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 16:50:22,788", "level": "INFO", "msg": "[RETRY] primary rate-limited (attempt 1/2). Waiting 2s before retry..."}
+{"time": "2026-04-26 16:50:24,789", "level": "INFO", "msg": "[TPM GUARD] Window ~4858 tokens used. Sleeping 4s before next call..."}
+{"time": "2026-04-26 16:50:29,009", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/KillConditionOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 16:50:29,009", "level": "INFO", "msg": "[REDUNDANCY] primary rate-limited. Moving to next provider..."}
+{"time": "2026-04-26 16:50:44,543", "level": "INFO", "msg": "[OK] Tier 1 (secondary-fallback): KillConditionOutput"}
+{"time": "2026-04-26 16:50:52,544", "level": "INFO", "msg": "\n=== Running Phase 4: Technical R&D ==="}
+{"time": "2026-04-26 16:50:58,102", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:50:59,582", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/TechOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 16:50:59,583", "level": "INFO", "msg": "[RETRY] primary rate-limited (attempt 1/2). Waiting 2s before retry..."}
+{"time": "2026-04-26 16:51:01,667", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/TechOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 16:51:01,668", "level": "INFO", "msg": "[REDUNDANCY] primary rate-limited. Moving to next provider..."}
+{"time": "2026-04-26 16:51:17,115", "level": "INFO", "msg": "[OK] Tier 1 (secondary-fallback): TechOutput"}
+{"time": "2026-04-26 16:51:25,117", "level": "INFO", "msg": "\n=== Running Phase 4b: Service Resolver ==="}
+{"time": "2026-04-26 16:51:25,121", "level": "INFO", "msg": "[SERVICE RESOLVER] Resolving 3 infra needs via Tavily..."}
+{"time": "2026-04-26 16:51:25,122", "level": "INFO", "msg": "[QUOTA] OK: 34/1000 Tavily calls this month."}
+{"time": "2026-04-26 16:51:25,780", "level": "INFO", "msg": "  → Resolving: user authentication JWT"}
+{"time": "2026-04-26 16:51:26,916", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:51:28,479", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/ServiceResolution): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 16:51:28,479", "level": "INFO", "msg": "[RETRY] primary rate-limited (attempt 1/2). Waiting 2s before retry..."}
+{"time": "2026-04-26 16:51:30,545", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/ServiceResolution): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 16:51:30,545", "level": "INFO", "msg": "[REDUNDANCY] primary rate-limited. Moving to next provider..."}
+{"time": "2026-04-26 16:51:45,932", "level": "INFO", "msg": "[OK] Tier 1 (secondary-fallback): ServiceResolution"}
+{"time": "2026-04-26 16:51:45,932", "level": "INFO", "msg": "  → Resolving: payment gateway India"}
+{"time": "2026-04-26 16:51:47,038", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:51:48,457", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/ServiceResolution): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 16:51:48,457", "level": "INFO", "msg": "[RETRY] primary rate-limited (attempt 1/2). Waiting 2s before retry..."}
+{"time": "2026-04-26 16:51:50,457", "level": "INFO", "msg": "[TPM GUARD] Window ~4798 tokens used. Sleeping 11s before next call..."}
+{"time": "2026-04-26 16:52:01,568", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/ServiceResolution): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 16:52:01,569", "level": "INFO", "msg": "[REDUNDANCY] primary rate-limited. Moving to next provider..."}
+{"time": "2026-04-26 16:52:16,974", "level": "INFO", "msg": "[OK] Tier 1 (secondary-fallback): ServiceResolution"}
+{"time": "2026-04-26 16:52:16,974", "level": "INFO", "msg": "  → Resolving: database hosting free tier"}
+{"time": "2026-04-26 16:52:18,247", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:52:19,716", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/ServiceResolution): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 16:52:19,716", "level": "INFO", "msg": "[RETRY] primary rate-limited (attempt 1/2). Waiting 2s before retry..."}
+{"time": "2026-04-26 16:52:21,781", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/ServiceResolution): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 16:52:21,781", "level": "INFO", "msg": "[REDUNDANCY] primary rate-limited. Moving to next provider..."}
+{"time": "2026-04-26 16:52:37,759", "level": "INFO", "msg": "[OK] Tier 1 (secondary-fallback): ServiceResolution"}
+{"time": "2026-04-26 16:52:37,765", "level": "INFO", "msg": "[SERVICE RESOLVER] [OK] Resolved 3 services. Cached for 30 days."}
+{"time": "2026-04-26 16:52:37,766", "level": "INFO", "msg": "  Services resolved: 3"}
+{"time": "2026-04-26 16:52:37,767", "level": "INFO", "msg": "\n=== Running Phase 5: Dev Blueprint ==="}
+{"time": "2026-04-26 16:52:38,439", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:52:39,910", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/BlueprintOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 16:52:39,910", "level": "INFO", "msg": "[RETRY] primary rate-limited (attempt 1/2). Waiting 2s before retry..."}
+{"time": "2026-04-26 16:52:41,911", "level": "INFO", "msg": "[TPM GUARD] Window ~4544 tokens used. Sleeping 6s before next call..."}
+{"time": "2026-04-26 16:52:47,877", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/BlueprintOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 16:52:47,877", "level": "INFO", "msg": "[REDUNDANCY] primary rate-limited. Moving to next provider..."}
+{"time": "2026-04-26 16:53:02,878", "level": "INFO", "msg": "[TPM GUARD] Window ~4755 tokens used. Sleeping 16s before next call..."}
+{"time": "2026-04-26 16:53:20,717", "level": "INFO", "msg": "[WARN] Tier 1 failed (secondary-fallback/BlueprintOutput): Error code: 400 - {'error': {'message': \"Failed to call a function. Please adjust your prompt. See 'failed_generation' for more details.\", 'type': 'in"}
+{"time": "2026-04-26 16:53:20,718", "level": "INFO", "msg": "[RETRY] Tier 2: scanning error string for JSON blobs..."}
+{"time": "2026-04-26 16:53:20,720", "level": "INFO", "msg": "[RETRY] Tier 3: schema-injected plain text retry (secondary-fallback)..."}
+{"time": "2026-04-26 16:53:22,866", "level": "INFO", "msg": "[OK] Tier 3 (secondary-fallback): BlueprintOutput"}
+{"time": "2026-04-26 16:53:22,867", "level": "INFO", "msg": "\n=== Running Phase 5b: Step Generator ==="}
+{"time": "2026-04-26 16:53:22,868", "level": "INFO", "msg": "  Generated 13 build steps"}
+{"time": "2026-04-26 16:53:22,869", "level": "INFO", "msg": "\n=== Running Phase 5c: Prompt Engineer ==="}
+{"time": "2026-04-26 16:53:22,870", "level": "INFO", "msg": "[PROMPT ENGINEER] [OK] Enriched 13 build steps with exact context."}
+{"time": "2026-04-26 16:53:22,871", "level": "INFO", "msg": "  Enriched 13 build steps"}
+{"time": "2026-04-26 16:53:30,872", "level": "INFO", "msg": "\n=== Running Phase 6: Go-To-Market ==="}
+{"time": "2026-04-26 16:53:33,957", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:53:35,176", "level": "INFO", "msg": "[TPM GUARD] Window ~4964 tokens used. Sleeping 4s before next call..."}
+{"time": "2026-04-26 16:53:38,958", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/GTMOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 16:53:38,959", "level": "INFO", "msg": "[RETRY] primary rate-limited (attempt 1/2). Waiting 2s before retry..."}
+{"time": "2026-04-26 16:53:40,959", "level": "INFO", "msg": "[TPM GUARD] Window ~4280 tokens used. Sleeping 9s before next call..."}
+{"time": "2026-04-26 16:53:49,777", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/GTMOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 16:53:49,777", "level": "INFO", "msg": "[REDUNDANCY] primary rate-limited. Moving to next provider..."}
+{"time": "2026-04-26 16:54:04,778", "level": "INFO", "msg": "[TPM GUARD] Window ~4030 tokens used. Sleeping 16s before next call..."}
+{"time": "2026-04-26 16:54:21,496", "level": "INFO", "msg": "[OK] Tier 1 (secondary-fallback): GTMOutput"}
+{"time": "2026-04-26 16:54:21,497", "level": "INFO", "msg": "\n=== Running Phase 7: Business Model ==="}
+{"time": "2026-04-26 16:54:23,386", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:54:24,740", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/BusinessOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 16:54:24,740", "level": "INFO", "msg": "[RETRY] primary rate-limited (attempt 1/2). Waiting 2s before retry..."}
+{"time": "2026-04-26 16:54:26,741", "level": "INFO", "msg": "[TPM GUARD] Window ~4779 tokens used. Sleeping 14s before next call..."}
+{"time": "2026-04-26 16:54:40,953", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/BusinessOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 16:54:40,953", "level": "INFO", "msg": "[REDUNDANCY] primary rate-limited. Moving to next provider..."}
+{"time": "2026-04-26 16:54:56,564", "level": "INFO", "msg": "[WARN] Tier 1 failed (secondary-fallback/BusinessOutput): Error code: 400 - {'error': {'message': \"tool call validation failed: parameters for tool BusinessOutput did not match schema: errors: [`/pricing_tier"}
+{"time": "2026-04-26 16:54:56,564", "level": "INFO", "msg": "[RETRY] Tier 2: scanning error string for JSON blobs..."}
+{"time": "2026-04-26 16:54:56,566", "level": "INFO", "msg": "[OK] Tier 2 (JSON blob/secondary-fallback): BusinessOutput"}
+{"time": "2026-04-26 16:55:04,567", "level": "INFO", "msg": "\n=== Running Phase 8: Launch Roadmap ==="}
+{"time": "2026-04-26 16:55:06,146", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:55:07,360", "level": "INFO", "msg": "[TPM GUARD] Window ~4257 tokens used. Sleeping 15s before next call..."}
+{"time": "2026-04-26 16:55:23,054", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/RoadmapOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 16:55:23,054", "level": "INFO", "msg": "[RETRY] primary rate-limited (attempt 1/2). Waiting 2s before retry..."}
+{"time": "2026-04-26 16:55:25,298", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/RoadmapOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 16:55:25,298", "level": "INFO", "msg": "[REDUNDANCY] primary rate-limited. Moving to next provider..."}
+{"time": "2026-04-26 16:55:40,299", "level": "INFO", "msg": "[TPM GUARD] Window ~4164 tokens used. Sleeping 2s before next call..."}
+{"time": "2026-04-26 16:55:43,989", "level": "INFO", "msg": "[WARN] Tier 1 failed (secondary-fallback/RoadmapOutput): Error code: 400 - {'error': {'message': \"Failed to call a function. Please adjust your prompt. See 'failed_generation' for more details.\", 'type': 'in"}
+{"time": "2026-04-26 16:55:43,990", "level": "INFO", "msg": "[RETRY] Tier 2: scanning error string for JSON blobs..."}
+{"time": "2026-04-26 16:55:43,991", "level": "INFO", "msg": "[OK] Tier 2 (JSON blob/secondary-fallback): RoadmapOutput"}
+{"time": "2026-04-26 16:55:51,994", "level": "INFO", "msg": "\\n=== Running Phase 8.5: Final Verdict Composer ==="}
+{"time": "2026-04-26 16:55:52,553", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 16:55:54,746", "level": "INFO", "msg": "[OK] Tier 1 (primary): FinalVerdict"}
+{"time": "2026-04-26 16:55:54,749", "level": "INFO", "msg": "\n=== Running Phase 9: Docx Export ==="}
+{"time": "2026-04-26 16:55:54,927", "level": "INFO", "msg": "[DOCX EXPORTER] [OK] Build guide saved: outputs\\inter-college-connect\\inter-college-connect_build_guide.docx"}
+{"time": "2026-04-26 16:55:54,928", "level": "INFO", "msg": "  Docx saved: outputs\\inter-college-connect\\inter-college-connect_build_guide.docx"}
+{"time": "2026-04-26 16:55:54,941", "level": "INFO", "msg": "\n=== FORGE COMPLETE ==="}
+{"time": "2026-04-26 16:55:54,941", "level": "INFO", "msg": "project_slug: inter-college-connect"}
+{"time": "2026-04-26 16:55:54,942", "level": "INFO", "msg": "feature_bundle: None"}
+{"time": "2026-04-26 16:55:54,942", "level": "INFO", "msg": "service_bundle: 3 services"}
+{"time": "2026-04-26 16:55:54,942", "level": "INFO", "msg": "build_steps: 13 steps"}
+{"time": "2026-04-26 16:55:54,942", "level": "INFO", "msg": "docx_path: outputs\\inter-college-connect\\inter-college-connect_build_guide.docx"}
+{"time": "2026-04-26 16:55:54,943", "level": "INFO", "msg": "Errors: []"}
+{"time": "2026-04-26 17:00:41,217", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 17:00:44,181", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/SharpenIdeaOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 17:00:44,181", "level": "INFO", "msg": "[RETRY] primary rate-limited (attempt 1/2). Waiting 2s before retry..."}
+{"time": "2026-04-26 17:00:46,242", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/SharpenIdeaOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 17:00:46,243", "level": "INFO", "msg": "[REDUNDANCY] primary rate-limited. Moving to next provider..."}
+{"time": "2026-04-26 17:01:01,644", "level": "INFO", "msg": "[OK] Tier 1 (secondary-fallback): SharpenIdeaOutput"}
+{"time": "2026-04-26 17:01:06,371", "level": "INFO", "msg": "\n=== Running Phase 1: Idea Analysis ==="}
+{"time": "2026-04-26 17:01:06,877", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 17:01:07,974", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/IdeaOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 17:01:07,974", "level": "INFO", "msg": "[RETRY] primary rate-limited (attempt 1/2). Waiting 2s before retry..."}
+{"time": "2026-04-26 17:01:10,085", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/IdeaOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 17:01:10,086", "level": "INFO", "msg": "[REDUNDANCY] primary rate-limited. Moving to next provider..."}
+{"time": "2026-04-26 17:01:26,359", "level": "INFO", "msg": "[OK] Tier 1 (secondary-fallback): IdeaOutput"}
+{"time": "2026-04-26 17:01:26,362", "level": "INFO", "msg": "\n=== Running Phase 1b: Feature Decomposition ==="}
+{"time": "2026-04-26 17:01:27,113", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 17:01:28,609", "level": "INFO", "msg": "[TPM GUARD] Window ~4914 tokens used. Sleeping 16s before next call..."}
+{"time": "2026-04-26 17:01:45,181", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/FeatureBundle): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 17:01:45,181", "level": "INFO", "msg": "[RETRY] primary rate-limited (attempt 1/2). Waiting 2s before retry..."}
+{"time": "2026-04-26 17:01:47,184", "level": "INFO", "msg": "[TPM GUARD] Window ~4855 tokens used. Sleeping 16s before next call..."}
+{"time": "2026-04-26 17:02:03,417", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/FeatureBundle): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 17:02:03,417", "level": "INFO", "msg": "[REDUNDANCY] primary rate-limited. Moving to next provider..."}
+{"time": "2026-04-26 17:02:19,598", "level": "INFO", "msg": "[OK] Tier 1 (secondary-fallback): FeatureBundle"}
+{"time": "2026-04-26 17:02:19,598", "level": "INFO", "msg": "[FEATURE AGENT] [OK] Decomposed into 6 features. MVP: ['Auth', 'Caption Generation']"}
+{"time": "2026-04-26 17:02:19,598", "level": "INFO", "msg": "  Features: ['Auth', 'Profile', 'Caption Generation', 'Caption Editing', 'File Upload', 'Payment']"}
+{"time": "2026-04-26 17:02:19,598", "level": "INFO", "msg": "  Features: ['Auth', 'Profile', 'Caption Generation', 'Caption Editing', 'File Upload', 'Payment']"}
+{"time": "2026-04-26 17:02:19,598", "level": "INFO", "msg": "\n=== Running Phase 2: Market Research ==="}
+{"time": "2026-04-26 17:02:25,167", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 17:02:26,226", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/CompetitorNamesOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 17:02:26,226", "level": "INFO", "msg": "[RETRY] primary rate-limited (attempt 1/2). Waiting 2s before retry..."}
+{"time": "2026-04-26 17:02:28,291", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/CompetitorNamesOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 17:02:28,291", "level": "INFO", "msg": "[REDUNDANCY] primary rate-limited. Moving to next provider..."}
+{"time": "2026-04-26 17:02:43,627", "level": "INFO", "msg": "[OK] Tier 1 (secondary-fallback): CompetitorNamesOutput"}
+{"time": "2026-04-26 17:03:14,404", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 17:03:16,161", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/MarketOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 17:03:16,161", "level": "INFO", "msg": "[RETRY] primary rate-limited (attempt 1/2). Waiting 2s before retry..."}
+{"time": "2026-04-26 17:03:18,163", "level": "INFO", "msg": "[TPM GUARD] Window ~4677 tokens used. Sleeping 2s before next call..."}
+{"time": "2026-04-26 17:03:20,495", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/MarketOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 17:03:20,495", "level": "INFO", "msg": "[REDUNDANCY] primary rate-limited. Moving to next provider..."}
+{"time": "2026-04-26 17:03:35,497", "level": "INFO", "msg": "[TPM GUARD] Window ~5490 tokens used. Sleeping 10s before next call..."}
+{"time": "2026-04-26 17:03:46,525", "level": "INFO", "msg": "[WARN] Tier 1 failed (secondary-fallback/MarketOutput): Error code: 400 - {'error': {'message': 'tool call validation failed: parameters for tool MarketOutput did not match schema: errors: [`/user_complaint"}
+{"time": "2026-04-26 17:03:46,525", "level": "INFO", "msg": "[RETRY] Tier 2: scanning error string for JSON blobs..."}
+{"time": "2026-04-26 17:03:46,528", "level": "INFO", "msg": "[OK] Tier 2 (JSON blob/secondary-fallback): MarketOutput"}
+{"time": "2026-04-26 17:03:46,531", "level": "INFO", "msg": "\n=== Running USP Agent: Finding uncovered gap ==="}
+{"time": "2026-04-26 17:03:47,295", "level": "INFO", "msg": "[USP AGENT] STARVATION: market_output has 0 complaints AND 0 competitors. Market agent likely hit a rate limit or parse error. Returning starvation USP — verdict will reflect missing data."}
+{"time": "2026-04-26 17:03:47,295", "level": "INFO", "msg": "  USP gap_found: False | Research data unavailable — market scan returned empty results (likely Groq rate"}
+{"time": "2026-04-26 17:03:47,296", "level": "INFO", "msg": "\n=== Running Phase 3: Verdict ==="}
+{"time": "2026-04-26 17:03:49,278", "level": "INFO", "msg": "VERDICT SCORES: {'market_proof': 0, 'competition': 25, 'total': 25}"}
+{"time": "2026-04-26 17:03:57,281", "level": "INFO", "msg": "\n=== Running Phase 4: Technical R&D ==="}
+{"time": "2026-04-26 17:04:02,911", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 17:04:04,421", "level": "INFO", "msg": "[TPM GUARD] Window ~7548 tokens used. Sleeping 13s before next call..."}
+{"time": "2026-04-26 17:04:18,134", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/TechOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 17:04:18,134", "level": "INFO", "msg": "[RETRY] primary rate-limited (attempt 1/2). Waiting 2s before retry..."}
+{"time": "2026-04-26 17:04:20,135", "level": "INFO", "msg": "[TPM GUARD] Window ~6049 tokens used. Sleeping 2s before next call..."}
+{"time": "2026-04-26 17:04:22,484", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/TechOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 17:04:22,484", "level": "INFO", "msg": "[REDUNDANCY] primary rate-limited. Moving to next provider..."}
+{"time": "2026-04-26 17:04:37,485", "level": "INFO", "msg": "[TPM GUARD] Window ~4550 tokens used. Sleeping 10s before next call..."}
+{"time": "2026-04-26 17:04:47,763", "level": "INFO", "msg": "[OK] Tier 1 (secondary-fallback): TechOutput"}
+{"time": "2026-04-26 17:04:55,768", "level": "INFO", "msg": "\n=== Running Phase 4b: Service Resolver ==="}
+{"time": "2026-04-26 17:04:55,770", "level": "INFO", "msg": "[SERVICE RESOLVER] Resolving 5 infra needs via Tavily..."}
+{"time": "2026-04-26 17:04:55,771", "level": "INFO", "msg": "[QUOTA] OK: 37/1000 Tavily calls this month."}
+{"time": "2026-04-26 17:04:56,542", "level": "INFO", "msg": "  → Resolving: OTP SMS verification"}
+{"time": "2026-04-26 17:04:58,022", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 17:04:59,757", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/ServiceResolution): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 17:04:59,757", "level": "INFO", "msg": "[RETRY] primary rate-limited (attempt 1/2). Waiting 2s before retry..."}
+{"time": "2026-04-26 17:05:01,821", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/ServiceResolution): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 17:05:01,821", "level": "INFO", "msg": "[REDUNDANCY] primary rate-limited. Moving to next provider..."}
+{"time": "2026-04-26 17:05:17,240", "level": "INFO", "msg": "[OK] Tier 1 (secondary-fallback): ServiceResolution"}
+{"time": "2026-04-26 17:05:17,244", "level": "INFO", "msg": "  → Resolving: user authentication JWT"}
+{"time": "2026-04-26 17:05:18,704", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 17:05:20,470", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/ServiceResolution): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 17:05:20,471", "level": "INFO", "msg": "[RETRY] primary rate-limited (attempt 1/2). Waiting 2s before retry..."}
+{"time": "2026-04-26 17:05:22,544", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/ServiceResolution): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 17:05:22,545", "level": "INFO", "msg": "[REDUNDANCY] primary rate-limited. Moving to next provider..."}
+{"time": "2026-04-26 17:05:37,990", "level": "INFO", "msg": "[OK] Tier 1 (secondary-fallback): ServiceResolution"}
+{"time": "2026-04-26 17:05:37,990", "level": "INFO", "msg": "  → Resolving: file storage cloud upload"}
+{"time": "2026-04-26 17:05:39,218", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 17:05:40,948", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/ServiceResolution): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 17:05:40,948", "level": "INFO", "msg": "[RETRY] primary rate-limited (attempt 1/2). Waiting 2s before retry..."}
+{"time": "2026-04-26 17:05:43,072", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/ServiceResolution): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 17:05:43,072", "level": "INFO", "msg": "[REDUNDANCY] primary rate-limited. Moving to next provider..."}
+{"time": "2026-04-26 17:05:58,570", "level": "INFO", "msg": "[OK] Tier 1 (secondary-fallback): ServiceResolution"}
+{"time": "2026-04-26 17:05:58,572", "level": "INFO", "msg": "  → Resolving: payment gateway India"}
+{"time": "2026-04-26 17:05:59,761", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 17:06:01,476", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/ServiceResolution): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 17:06:01,476", "level": "INFO", "msg": "[RETRY] primary rate-limited (attempt 1/2). Waiting 2s before retry..."}
+{"time": "2026-04-26 17:06:03,534", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/ServiceResolution): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 17:06:03,537", "level": "INFO", "msg": "[REDUNDANCY] primary rate-limited. Moving to next provider..."}
+{"time": "2026-04-26 17:06:18,926", "level": "INFO", "msg": "[OK] Tier 1 (secondary-fallback): ServiceResolution"}
+{"time": "2026-04-26 17:06:18,927", "level": "INFO", "msg": "  → Resolving: database hosting free tier"}
+{"time": "2026-04-26 17:06:20,098", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 17:06:21,985", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/ServiceResolution): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 17:06:21,985", "level": "INFO", "msg": "[RETRY] primary rate-limited (attempt 1/2). Waiting 2s before retry..."}
+{"time": "2026-04-26 17:06:24,052", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/ServiceResolution): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 17:06:24,057", "level": "INFO", "msg": "[REDUNDANCY] primary rate-limited. Moving to next provider..."}
+{"time": "2026-04-26 17:06:39,501", "level": "INFO", "msg": "[OK] Tier 1 (secondary-fallback): ServiceResolution"}
+{"time": "2026-04-26 17:06:39,509", "level": "INFO", "msg": "[SERVICE RESOLVER] [OK] Resolved 5 services. Cached for 30 days."}
+{"time": "2026-04-26 17:06:39,509", "level": "INFO", "msg": "  Services resolved: 5"}
+{"time": "2026-04-26 17:06:39,511", "level": "INFO", "msg": "\n=== Running Phase 5: Dev Blueprint ==="}
+{"time": "2026-04-26 17:06:40,331", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 17:06:42,442", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/BlueprintOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 17:06:42,444", "level": "INFO", "msg": "[RETRY] primary rate-limited (attempt 1/2). Waiting 2s before retry..."}
+{"time": "2026-04-26 17:06:44,444", "level": "INFO", "msg": "[TPM GUARD] Window ~4491 tokens used. Sleeping 16s before next call..."}
+{"time": "2026-04-26 17:07:00,263", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/BlueprintOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 17:07:00,263", "level": "INFO", "msg": "[REDUNDANCY] primary rate-limited. Moving to next provider..."}
+{"time": "2026-04-26 17:07:15,264", "level": "INFO", "msg": "[TPM GUARD] Window ~4727 tokens used. Sleeping 5s before next call..."}
+{"time": "2026-04-26 17:07:22,476", "level": "INFO", "msg": "[OK] Tier 1 (secondary-fallback): BlueprintOutput"}
+{"time": "2026-04-26 17:07:22,477", "level": "INFO", "msg": "\n=== Running Phase 5b: Step Generator ==="}
+{"time": "2026-04-26 17:07:22,481", "level": "INFO", "msg": "  Generated 13 build steps"}
+{"time": "2026-04-26 17:07:22,482", "level": "INFO", "msg": "\n=== Running Phase 5c: Prompt Engineer ==="}
+{"time": "2026-04-26 17:07:22,482", "level": "INFO", "msg": "[PROMPT ENGINEER] [OK] Enriched 13 build steps with exact context."}
+{"time": "2026-04-26 17:07:22,483", "level": "INFO", "msg": "  Enriched 13 build steps"}
+{"time": "2026-04-26 17:07:30,485", "level": "INFO", "msg": "\n=== Running Phase 6: Go-To-Market ==="}
+{"time": "2026-04-26 17:07:33,945", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 17:07:35,458", "level": "INFO", "msg": "[TPM GUARD] Window ~4962 tokens used. Sleeping 6s before next call..."}
+{"time": "2026-04-26 17:07:41,259", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/GTMOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 17:07:41,259", "level": "INFO", "msg": "[RETRY] primary rate-limited (attempt 1/2). Waiting 2s before retry..."}
+{"time": "2026-04-26 17:07:43,259", "level": "INFO", "msg": "[TPM GUARD] Window ~4270 tokens used. Sleeping 19s before next call..."}
+{"time": "2026-04-26 17:08:02,255", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/GTMOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 17:08:02,255", "level": "INFO", "msg": "[REDUNDANCY] primary rate-limited. Moving to next provider..."}
+{"time": "2026-04-26 17:08:17,257", "level": "INFO", "msg": "[TPM GUARD] Window ~4004 tokens used. Sleeping 5s before next call..."}
+{"time": "2026-04-26 17:08:23,590", "level": "INFO", "msg": "[OK] Tier 1 (secondary-fallback): GTMOutput"}
+{"time": "2026-04-26 17:08:23,595", "level": "INFO", "msg": "\n=== Running Phase 7: Business Model ==="}
+{"time": "2026-04-26 17:08:25,051", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 17:08:26,121", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/BusinessOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 17:08:26,121", "level": "INFO", "msg": "[RETRY] primary rate-limited (attempt 1/2). Waiting 2s before retry..."}
+{"time": "2026-04-26 17:08:28,122", "level": "INFO", "msg": "[TPM GUARD] Window ~4759 tokens used. Sleeping 15s before next call..."}
+{"time": "2026-04-26 17:08:43,411", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/BusinessOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 17:08:43,411", "level": "INFO", "msg": "[REDUNDANCY] primary rate-limited. Moving to next provider..."}
+{"time": "2026-04-26 17:08:58,412", "level": "INFO", "msg": "[TPM GUARD] Window ~4534 tokens used. Sleeping 6s before next call..."}
+{"time": "2026-04-26 17:09:04,791", "level": "INFO", "msg": "[OK] Tier 1 (secondary-fallback): BusinessOutput"}
+{"time": "2026-04-26 17:09:12,794", "level": "INFO", "msg": "\n=== Running Phase 8: Launch Roadmap ==="}
+{"time": "2026-04-26 17:09:14,253", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 17:09:15,153", "level": "INFO", "msg": "[TPM GUARD] Window ~4309 tokens used. Sleeping 9s before next call..."}
+{"time": "2026-04-26 17:09:24,725", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/RoadmapOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 17:09:24,726", "level": "INFO", "msg": "[RETRY] primary rate-limited (attempt 1/2). Waiting 2s before retry..."}
+{"time": "2026-04-26 17:09:27,001", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/RoadmapOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-26 17:09:27,001", "level": "INFO", "msg": "[REDUNDANCY] primary rate-limited. Moving to next provider..."}
+{"time": "2026-04-26 17:09:42,003", "level": "INFO", "msg": "[TPM GUARD] Window ~4232 tokens used. Sleeping 3s before next call..."}
+{"time": "2026-04-26 17:09:46,295", "level": "INFO", "msg": "[WARN] Tier 1 failed (secondary-fallback/RoadmapOutput): Error code: 400 - {'error': {'message': \"Failed to call a function. Please adjust your prompt. See 'failed_generation' for more details.\", 'type': 'in"}
+{"time": "2026-04-26 17:09:46,295", "level": "INFO", "msg": "[RETRY] Tier 2: scanning error string for JSON blobs..."}
+{"time": "2026-04-26 17:09:46,296", "level": "INFO", "msg": "[RETRY] Tier 3: schema-injected plain text retry (secondary-fallback)..."}
+{"time": "2026-04-26 17:09:47,823", "level": "INFO", "msg": "[OK] Tier 3 (secondary-fallback): RoadmapOutput"}
+{"time": "2026-04-26 17:09:55,827", "level": "INFO", "msg": "\\n=== Running Phase 8.5: Final Verdict Composer ==="}
+{"time": "2026-04-26 17:09:56,272", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 17:09:59,371", "level": "INFO", "msg": "[OK] Tier 1 (primary): FinalVerdict"}
+{"time": "2026-04-26 17:09:59,373", "level": "INFO", "msg": "\n=== Running Phase 9: Docx Export ==="}
+{"time": "2026-04-26 17:09:59,507", "level": "INFO", "msg": "[DOCX EXPORTER] [OK] Build guide saved: outputs\\captiongenie\\captiongenie_build_guide.docx"}
+{"time": "2026-04-26 17:09:59,507", "level": "INFO", "msg": "  Docx saved: outputs\\captiongenie\\captiongenie_build_guide.docx"}
+{"time": "2026-04-26 21:03:27,973", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 21:03:31,676", "level": "INFO", "msg": "[OK] Tier 1 (primary): CompetitorNamesOutput"}
+{"time": "2026-04-26 21:03:40,876", "level": "INFO", "msg": "[RESEARCH AGENT] Web search (Tavily) quota exhausted. Research data is incomplete."}
+{"time": "2026-04-26 21:03:40,883", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 21:03:44,143", "level": "INFO", "msg": "[OK] Tier 1 (primary): MarketOutput"}
+{"time": "2026-04-26 21:03:47,723", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-26 21:03:50,766", "level": "INFO", "msg": "[OK] Tier 1 (primary): BusinessOutput"}
+{"time": "2026-04-27 15:33:59,314", "level": "INFO", "msg": "[SYSTEM] ChromaDB telemetry monkeypatched."}
+{"time": "2026-04-27 15:34:13,935", "level": "INFO", "msg": "[OLLAMA] WARNING: Cannot reach http://localhost:11434 — All connection attempts failed. Set OLLAMA_MODEL= in .env to disable this check, or start Ollama."}
+{"time": "2026-04-27 15:35:39,376", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-27 15:35:41,733", "level": "INFO", "msg": "[OK] Tier 1 (primary): IntakeQuestionsOutput"}
+{"time": "2026-04-27 15:36:15,094", "level": "INFO", "msg": "[SYSTEM] ChromaDB telemetry monkeypatched."}
+{"time": "2026-04-27 15:36:22,228", "level": "INFO", "msg": "[OLLAMA] WARNING: Cannot reach http://localhost:11434 — All connection attempts failed. Set OLLAMA_MODEL= in .env to disable this check, or start Ollama."}
+{"time": "2026-04-27 15:39:14,519", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-27 15:39:16,574", "level": "INFO", "msg": "[OK] Tier 1 (primary): SharpenIdeaOutput"}
+{"time": "2026-04-27 15:39:21,712", "level": "INFO", "msg": "\n=== Running Phase 1: Idea Analysis ==="}
+{"time": "2026-04-27 15:39:22,257", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-27 15:39:25,982", "level": "INFO", "msg": "[OK] Tier 1 (primary): IdeaOutput"}
+{"time": "2026-04-27 15:39:25,985", "level": "INFO", "msg": "\n=== Running Phase 1b: Feature Decomposition ==="}
+{"time": "2026-04-27 15:39:26,564", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-27 15:39:29,262", "level": "INFO", "msg": "[OK] Tier 1 (primary): FeatureBundle"}
+{"time": "2026-04-27 15:39:29,264", "level": "INFO", "msg": "[FEATURE AGENT] [OK] Decomposed into 5 features. MVP: ['Registration', 'Video Upload', 'Caption Generation']"}
+{"time": "2026-04-27 15:39:29,264", "level": "INFO", "msg": "  Features: ['Registration', 'Video Upload', 'Caption Generation', 'Caption Editing', 'Profile Management']"}
+{"time": "2026-04-27 15:39:29,264", "level": "INFO", "msg": "  Features: ['Registration', 'Video Upload', 'Caption Generation', 'Caption Editing', 'Profile Management']"}
+{"time": "2026-04-27 15:39:29,264", "level": "INFO", "msg": "\n=== Running Phase 2: Market Research ==="}
+{"time": "2026-04-27 15:39:46,971", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-27 15:39:48,685", "level": "INFO", "msg": "[OK] Tier 1 (primary): CompetitorNamesOutput"}
+{"time": "2026-04-27 15:40:58,562", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-27 15:41:01,661", "level": "INFO", "msg": "[OK] Tier 1 (primary): MarketOutput"}
+{"time": "2026-04-27 15:41:01,665", "level": "INFO", "msg": "\n=== Running USP Agent: Finding uncovered gap ==="}
+{"time": "2026-04-27 15:41:02,173", "level": "INFO", "msg": "[USP AGENT] 1 complaints, 2 competitors"}
+{"time": "2026-04-27 15:41:02,173", "level": "INFO", "msg": "[USP AGENT] Uncovered complaints: [\"I won't pay for a horrible customer service app\"]"}
+{"time": "2026-04-27 15:41:02,173", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-27 15:41:03,804", "level": "INFO", "msg": "[OK] Tier 1 (primary): USPOutput"}
+{"time": "2026-04-27 15:41:03,806", "level": "INFO", "msg": "[USP AGENT] USP: Hindi-English timing-aware captions for creators under 5k followers on Instagram Reels"}
+{"time": "2026-04-27 15:41:03,806", "level": "INFO", "msg": "  USP gap_found: True | Hindi-English timing-aware captions for creators under 5k followers on Instagram"}
+{"time": "2026-04-27 15:41:03,809", "level": "INFO", "msg": "\n=== Running Phase 3: Verdict ==="}
+{"time": "2026-04-27 15:41:06,837", "level": "INFO", "msg": "VERDICT SCORES: {'market_proof': 8, 'competition': 15, 'total': 23}"}
+{"time": "2026-04-27 15:41:06,839", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-27 15:41:09,167", "level": "INFO", "msg": "[OK] Tier 1 (primary): VerdictOutput"}
+{"time": "2026-04-27 15:41:17,171", "level": "INFO", "msg": "\\n=== Running Phase 3.5: Kill Condition ==="}
+{"time": "2026-04-27 15:41:17,779", "level": "INFO", "msg": "\n--- KILL CONDITION RESEARCH FOR AutoCaption ---"}
+{"time": "2026-04-27 15:41:43,703", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-27 15:41:44,671", "level": "INFO", "msg": "[TPM GUARD] Window ~4749 tokens used. Sleeping 17s before next call..."}
+{"time": "2026-04-27 15:42:02,377", "level": "INFO", "msg": "[OK] Tier 1 (primary): KillConditionOutput"}
+{"time": "2026-04-27 15:42:10,382", "level": "INFO", "msg": "\n=== Running Phase 4: Technical R&D ==="}
+{"time": "2026-04-27 15:42:15,749", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-27 15:42:17,893", "level": "INFO", "msg": "[OK] Tier 1 (primary): TechOutput"}
+{"time": "2026-04-27 15:42:25,896", "level": "INFO", "msg": "\n=== Running Phase 4b: Service Resolver ==="}
+{"time": "2026-04-27 15:42:25,900", "level": "INFO", "msg": "[SERVICE RESOLVER] Cache HIT — skipping Tavily (3 needs)."}
+{"time": "2026-04-27 15:42:25,900", "level": "INFO", "msg": "  Services resolved: 3"}
+{"time": "2026-04-27 15:42:25,901", "level": "INFO", "msg": "\n=== Running Phase 5: Dev Blueprint ==="}
+{"time": "2026-04-27 15:42:26,418", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-27 15:42:30,564", "level": "INFO", "msg": "[OK] Tier 1 (primary): BlueprintOutput"}
+{"time": "2026-04-27 15:42:30,566", "level": "INFO", "msg": "\n=== Running Phase 5b: Step Generator ==="}
+{"time": "2026-04-27 15:42:30,566", "level": "INFO", "msg": "  Generated 13 build steps"}
+{"time": "2026-04-27 15:42:30,568", "level": "INFO", "msg": "\n=== Running Phase 5c: Prompt Engineer ==="}
+{"time": "2026-04-27 15:42:30,570", "level": "INFO", "msg": "[PROMPT ENGINEER] [OK] Enriched 13 build steps with exact context."}
+{"time": "2026-04-27 15:42:30,572", "level": "INFO", "msg": "  Enriched 13 build steps"}
+{"time": "2026-04-27 15:42:38,573", "level": "INFO", "msg": "\n=== Running Phase 6: Go-To-Market ==="}
+{"time": "2026-04-27 15:42:59,000", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-27 15:43:00,011", "level": "INFO", "msg": "[TPM GUARD] Window ~3727 tokens used. Sleeping 4s before next call..."}
+{"time": "2026-04-27 15:43:05,433", "level": "INFO", "msg": "[OK] Tier 1 (primary): GTMOutput"}
+{"time": "2026-04-27 15:43:05,436", "level": "INFO", "msg": "\n=== Running Phase 7: Business Model ==="}
+{"time": "2026-04-27 15:43:10,064", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-27 15:43:11,053", "level": "INFO", "msg": "[TPM GUARD] Window ~4056 tokens used. Sleeping 8s before next call..."}
+{"time": "2026-04-27 15:43:20,053", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/BusinessOutput): Error code: 400 - {'error': {'message': \"tool call validation failed: parameters for tool BusinessOutput did not match schema: errors: [`/pricing_tier"}
+{"time": "2026-04-27 15:43:20,054", "level": "INFO", "msg": "[RETRY] Tier 2: scanning error string for JSON blobs..."}
+{"time": "2026-04-27 15:43:20,056", "level": "INFO", "msg": "[OK] Tier 2 (JSON blob/primary): BusinessOutput"}
+{"time": "2026-04-27 15:43:28,058", "level": "INFO", "msg": "\n=== Running Phase 8: Launch Roadmap ==="}
+{"time": "2026-04-27 15:43:29,555", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-27 15:43:32,210", "level": "INFO", "msg": "[OK] Tier 1 (primary): RoadmapOutput"}
+{"time": "2026-04-27 15:43:40,213", "level": "INFO", "msg": "\\n=== Running Phase 8.5: Final Verdict Composer ==="}
+{"time": "2026-04-27 15:43:40,717", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-27 15:43:42,971", "level": "INFO", "msg": "[OK] Tier 1 (primary): FinalVerdict"}
+{"time": "2026-04-27 15:43:42,974", "level": "INFO", "msg": "\n=== Running Phase 9: Docx Export ==="}
+{"time": "2026-04-27 15:43:43,124", "level": "INFO", "msg": "[DOCX EXPORTER] [OK] Build guide saved: outputs\\autocaption\\autocaption_build_guide.docx"}
+{"time": "2026-04-27 15:43:43,124", "level": "INFO", "msg": "  Docx saved: outputs\\autocaption\\autocaption_build_guide.docx"}
+{"time": "2026-04-27 15:58:47,552", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-27 15:58:49,664", "level": "INFO", "msg": "[OK] Tier 1 (primary): SharpenIdeaOutput"}
+{"time": "2026-04-27 15:58:54,448", "level": "INFO", "msg": "\n=== Running Phase 1: Idea Analysis ==="}
+{"time": "2026-04-27 15:58:54,987", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-27 15:58:59,178", "level": "INFO", "msg": "[OK] Tier 1 (primary): IdeaOutput"}
+{"time": "2026-04-27 15:58:59,181", "level": "INFO", "msg": "\n=== Running Phase 1b: Feature Decomposition ==="}
+{"time": "2026-04-27 15:58:59,655", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-27 15:59:02,488", "level": "INFO", "msg": "[OK] Tier 1 (primary): FeatureBundle"}
+{"time": "2026-04-27 15:59:02,490", "level": "INFO", "msg": "[FEATURE AGENT] [OK] Decomposed into 4 features. MVP: ['Registration', 'Video Upload', 'Caption Generator']"}
+{"time": "2026-04-27 15:59:02,490", "level": "INFO", "msg": "  Features: ['Registration', 'Video Upload', 'Caption Generator', 'Profile Management']"}
+{"time": "2026-04-27 15:59:02,491", "level": "INFO", "msg": "  Features: ['Registration', 'Video Upload', 'Caption Generator', 'Profile Management']"}
+{"time": "2026-04-27 15:59:02,491", "level": "INFO", "msg": "\n=== Running Phase 2: Market Research ==="}
+{"time": "2026-04-27 15:59:10,530", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-27 15:59:12,068", "level": "INFO", "msg": "[OK] Tier 1 (primary): CompetitorNamesOutput"}
+{"time": "2026-04-27 15:59:24,928", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-27 15:59:26,162", "level": "INFO", "msg": "[TPM GUARD] Window ~3424 tokens used. Sleeping 25s before next call..."}
+{"time": "2026-04-27 15:59:52,788", "level": "INFO", "msg": "[OK] Tier 1 (primary): MarketOutput"}
+{"time": "2026-04-27 15:59:52,791", "level": "INFO", "msg": "\n=== Running USP Agent: Finding uncovered gap ==="}
+{"time": "2026-04-27 15:59:53,316", "level": "INFO", "msg": "[USP AGENT] 1 complaints, 1 competitors"}
+{"time": "2026-04-27 15:59:53,317", "level": "INFO", "msg": "[USP AGENT] Uncovered complaints: []"}
+{"time": "2026-04-27 15:59:53,317", "level": "INFO", "msg": "[USP AGENT] No uncovered complaints — gap_found=False"}
+{"time": "2026-04-27 15:59:53,317", "level": "INFO", "msg": "  USP gap_found: False | No unique gap found. All user complaints are already addressed by existing compe"}
+{"time": "2026-04-27 15:59:53,318", "level": "INFO", "msg": "\n=== Running Phase 3: Verdict ==="}
+{"time": "2026-04-27 15:59:55,391", "level": "INFO", "msg": "VERDICT SCORES: {'market_proof': 8, 'competition': 25, 'total': 33}"}
+{"time": "2026-04-27 15:59:55,393", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-27 15:59:56,493", "level": "INFO", "msg": "[TPM GUARD] Window ~4971 tokens used. Sleeping 6s before next call..."}
+{"time": "2026-04-27 16:00:04,082", "level": "INFO", "msg": "[OK] Tier 1 (primary): VerdictOutput"}
+{"time": "2026-04-27 16:00:12,087", "level": "INFO", "msg": "\\n=== Running Phase 3.5: Kill Condition ==="}
+{"time": "2026-04-27 16:00:12,574", "level": "INFO", "msg": "\n--- KILL CONDITION RESEARCH FOR AutoCaption ---"}
+{"time": "2026-04-27 16:00:19,218", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-27 16:00:20,259", "level": "INFO", "msg": "[TPM GUARD] Window ~4260 tokens used. Sleeping 32s before next call..."}
+{"time": "2026-04-27 16:00:53,384", "level": "INFO", "msg": "[OK] Tier 1 (primary): KillConditionOutput"}
+{"time": "2026-04-27 16:01:01,387", "level": "INFO", "msg": "\n=== Running Phase 4: Technical R&D ==="}
+{"time": "2026-04-27 16:01:06,461", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-27 16:01:08,726", "level": "INFO", "msg": "[OK] Tier 1 (primary): TechOutput"}
+{"time": "2026-04-27 16:01:16,732", "level": "INFO", "msg": "\n=== Running Phase 4b: Service Resolver ==="}
+{"time": "2026-04-27 16:01:16,732", "level": "INFO", "msg": "[SERVICE RESOLVER] Cache HIT — skipping Tavily (3 needs)."}
+{"time": "2026-04-27 16:01:16,732", "level": "INFO", "msg": "  Services resolved: 3"}
+{"time": "2026-04-27 16:01:16,733", "level": "INFO", "msg": "\n=== Running Phase 5: Dev Blueprint ==="}
+{"time": "2026-04-27 16:01:17,244", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-27 16:01:21,435", "level": "INFO", "msg": "[OK] Tier 1 (primary): BlueprintOutput"}
+{"time": "2026-04-27 16:01:21,439", "level": "INFO", "msg": "\n=== Running Phase 5b: Step Generator ==="}
+{"time": "2026-04-27 16:01:21,440", "level": "INFO", "msg": "  Generated 13 build steps"}
+{"time": "2026-04-27 16:01:21,440", "level": "INFO", "msg": "\n=== Running Phase 5c: Prompt Engineer ==="}
+{"time": "2026-04-27 16:01:21,441", "level": "INFO", "msg": "[PROMPT ENGINEER] [OK] Enriched 13 build steps with exact context."}
+{"time": "2026-04-27 16:01:21,441", "level": "INFO", "msg": "  Enriched 13 build steps"}
+{"time": "2026-04-27 16:01:29,443", "level": "INFO", "msg": "\n=== Running Phase 6: Go-To-Market ==="}
+{"time": "2026-04-27 16:01:39,753", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-27 16:01:40,752", "level": "INFO", "msg": "[TPM GUARD] Window ~3402 tokens used. Sleeping 14s before next call..."}
+{"time": "2026-04-27 16:01:56,549", "level": "INFO", "msg": "[OK] Tier 1 (primary): GTMOutput"}
+{"time": "2026-04-27 16:01:56,552", "level": "INFO", "msg": "\n=== Running Phase 7: Business Model ==="}
+{"time": "2026-04-27 16:01:58,870", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-27 16:01:59,944", "level": "INFO", "msg": "[TPM GUARD] Window ~4521 tokens used. Sleeping 10s before next call..."}
+{"time": "2026-04-27 16:02:10,802", "level": "INFO", "msg": "[OK] Tier 1 (primary): BusinessOutput"}
+{"time": "2026-04-27 16:02:18,809", "level": "INFO", "msg": "\n=== Running Phase 8: Launch Roadmap ==="}
+{"time": "2026-04-27 16:02:20,427", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-27 16:02:23,495", "level": "INFO", "msg": "[OK] Tier 1 (primary): RoadmapOutput"}
+{"time": "2026-04-27 16:02:31,499", "level": "INFO", "msg": "\\n=== Running Phase 8.5: Final Verdict Composer ==="}
+{"time": "2026-04-27 16:02:32,003", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-27 16:02:34,306", "level": "INFO", "msg": "[OK] Tier 1 (primary): FinalVerdict"}
+{"time": "2026-04-27 16:02:34,308", "level": "INFO", "msg": "\n=== Running Phase 9: Docx Export ==="}
+{"time": "2026-04-27 16:02:34,452", "level": "INFO", "msg": "[DOCX EXPORTER] [OK] Build guide saved: outputs\\autocaption\\autocaption_build_guide.docx"}
+{"time": "2026-04-27 16:02:34,452", "level": "INFO", "msg": "  Docx saved: outputs\\autocaption\\autocaption_build_guide.docx"}
+{"time": "2026-04-27 16:22:33,013", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-27 16:22:34,993", "level": "INFO", "msg": "[OK] Tier 1 (primary): SharpenIdeaOutput"}
+{"time": "2026-04-27 16:22:40,422", "level": "INFO", "msg": "\n=== Running Phase 1: Idea Analysis ==="}
+{"time": "2026-04-27 16:22:41,037", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-27 16:22:45,155", "level": "INFO", "msg": "[OK] Tier 1 (primary): IdeaOutput"}
+{"time": "2026-04-27 16:22:45,158", "level": "INFO", "msg": "\n=== Running Phase 1b: Feature Decomposition ==="}
+{"time": "2026-04-27 16:22:45,679", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-27 16:22:48,391", "level": "INFO", "msg": "[OK] Tier 1 (primary): FeatureBundle"}
+{"time": "2026-04-27 16:22:48,393", "level": "INFO", "msg": "[FEATURE AGENT] [OK] Decomposed into 4 features. MVP: ['Registration', 'Caption Generator', 'Video Upload']"}
+{"time": "2026-04-27 16:22:48,393", "level": "INFO", "msg": "  Features: ['Registration', 'Caption Generator', 'Video Upload', 'Profile Management']"}
+{"time": "2026-04-27 16:22:48,393", "level": "INFO", "msg": "  Features: ['Registration', 'Caption Generator', 'Video Upload', 'Profile Management']"}
+{"time": "2026-04-27 16:22:48,394", "level": "INFO", "msg": "\n=== Running Phase 2: Market Research ==="}
+{"time": "2026-04-27 16:23:04,693", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-27 16:23:14,245", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/CompetitorNamesOutput): Connection error."}
+{"time": "2026-04-27 16:23:14,249", "level": "INFO", "msg": "[RETRY] Tier 2: scanning error string for JSON blobs..."}
+{"time": "2026-04-27 16:23:14,251", "level": "INFO", "msg": "[RETRY] Tier 3: schema-injected plain text retry (primary)..."}
+{"time": "2026-04-27 16:23:15,845", "level": "INFO", "msg": "[OK] Tier 3 (primary): CompetitorNamesOutput"}
+{"time": "2026-04-27 16:24:58,539", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-27 16:25:01,888", "level": "INFO", "msg": "[OK] Tier 1 (primary): MarketOutput"}
+{"time": "2026-04-27 16:25:01,890", "level": "INFO", "msg": "\n=== Running USP Agent: Finding uncovered gap ==="}
+{"time": "2026-04-27 16:25:02,336", "level": "INFO", "msg": "[USP AGENT] 1 complaints, 2 competitors"}
+{"time": "2026-04-27 16:25:02,336", "level": "INFO", "msg": "[USP AGENT] Uncovered complaints: []"}
+{"time": "2026-04-27 16:25:02,336", "level": "INFO", "msg": "[USP AGENT] No uncovered complaints — gap_found=False"}
+{"time": "2026-04-27 16:25:02,340", "level": "INFO", "msg": "  USP gap_found: False | No unique gap found. All user complaints are already addressed by existing compe"}
+{"time": "2026-04-27 16:25:02,342", "level": "INFO", "msg": "\n=== Running Phase 3: Verdict ==="}
+{"time": "2026-04-27 16:25:07,137", "level": "INFO", "msg": "VERDICT SCORES: {'market_proof': 8, 'competition': 15, 'total': 23}"}
+{"time": "2026-04-27 16:25:07,140", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-27 16:25:09,787", "level": "INFO", "msg": "[OK] Tier 1 (primary): VerdictOutput"}
+{"time": "2026-04-27 16:25:17,789", "level": "INFO", "msg": "\\n=== Running Phase 3.5: Kill Condition ==="}
+{"time": "2026-04-27 16:25:18,234", "level": "INFO", "msg": "\n--- KILL CONDITION RESEARCH FOR AutoCaption ---"}
+{"time": "2026-04-27 16:25:41,933", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-27 16:25:42,812", "level": "INFO", "msg": "[TPM GUARD] Window ~4288 tokens used. Sleeping 19s before next call..."}
+{"time": "2026-04-27 16:26:02,266", "level": "INFO", "msg": "[OK] Tier 1 (primary): KillConditionOutput"}
+{"time": "2026-04-27 16:26:10,270", "level": "INFO", "msg": "\n=== Running Phase 4: Technical R&D ==="}
+{"time": "2026-04-27 16:26:15,232", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-27 16:26:17,235", "level": "INFO", "msg": "[OK] Tier 1 (primary): TechOutput"}
+{"time": "2026-04-27 16:26:25,239", "level": "INFO", "msg": "\n=== Running Phase 4b: Service Resolver ==="}
+{"time": "2026-04-27 16:26:25,239", "level": "INFO", "msg": "[SERVICE RESOLVER] Resolving 4 infra needs via Tavily..."}
+{"time": "2026-04-27 16:26:25,243", "level": "INFO", "msg": "[QUOTA] OK: 42/1000 Tavily calls this month."}
+{"time": "2026-04-27 16:26:25,685", "level": "INFO", "msg": "  → Resolving: user authentication JWT"}
+{"time": "2026-04-27 16:26:29,279", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-27 16:26:31,073", "level": "INFO", "msg": "[OK] Tier 1 (primary): ServiceResolution"}
+{"time": "2026-04-27 16:26:31,079", "level": "INFO", "msg": "  → Resolving: file storage cloud upload"}
+{"time": "2026-04-27 16:26:36,414", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-27 16:26:38,285", "level": "INFO", "msg": "[OK] Tier 1 (primary): ServiceResolution"}
+{"time": "2026-04-27 16:26:38,288", "level": "INFO", "msg": "  → Resolving: payment gateway India"}
+{"time": "2026-04-27 16:26:41,521", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-27 16:26:42,393", "level": "INFO", "msg": "[TPM GUARD] Window ~4831 tokens used. Sleeping 21s before next call..."}
+{"time": "2026-04-27 16:27:04,659", "level": "INFO", "msg": "[OK] Tier 1 (primary): ServiceResolution"}
+{"time": "2026-04-27 16:27:04,662", "level": "INFO", "msg": "  → Resolving: database hosting free tier"}
+{"time": "2026-04-27 16:27:11,552", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-27 16:27:12,421", "level": "INFO", "msg": "[TPM GUARD] Window ~5009 tokens used. Sleeping 6s before next call..."}
+{"time": "2026-04-27 16:27:19,066", "level": "INFO", "msg": "[OK] Tier 1 (primary): ServiceResolution"}
+{"time": "2026-04-27 16:27:19,075", "level": "INFO", "msg": "[SERVICE RESOLVER] [OK] Resolved 4 services. Cached for 30 days."}
+{"time": "2026-04-27 16:27:19,075", "level": "INFO", "msg": "  Services resolved: 4"}
+{"time": "2026-04-27 16:27:19,077", "level": "INFO", "msg": "\n=== Running Phase 5: Dev Blueprint ==="}
+{"time": "2026-04-27 16:27:19,514", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-27 16:27:20,406", "level": "INFO", "msg": "[TPM GUARD] Window ~5230 tokens used. Sleeping 12s before next call..."}
+{"time": "2026-04-27 16:27:48,494", "level": "INFO", "msg": "[SYSTEM] ChromaDB telemetry monkeypatched."}
+{"time": "2026-04-27 16:27:58,232", "level": "INFO", "msg": "[OLLAMA] WARNING: Cannot reach http://localhost:11434 — All connection attempts failed. Set OLLAMA_MODEL= in .env to disable this check, or start Ollama."}
+{"time": "2026-04-27 16:28:02,777", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-27 16:28:04,837", "level": "INFO", "msg": "[OK] Tier 1 (primary): SharpenIdeaOutput"}
+{"time": "2026-04-27 16:28:09,909", "level": "INFO", "msg": "\n=== Running Phase 1: Idea Analysis ==="}
+{"time": "2026-04-27 16:28:10,413", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-27 16:28:15,015", "level": "INFO", "msg": "[OK] Tier 1 (primary): IdeaOutput"}
+{"time": "2026-04-27 16:28:15,019", "level": "INFO", "msg": "\n=== Running Phase 1b: Feature Decomposition ==="}
+{"time": "2026-04-27 16:28:15,620", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-27 16:28:18,425", "level": "INFO", "msg": "[OK] Tier 1 (primary): FeatureBundle"}
+{"time": "2026-04-27 16:28:18,427", "level": "INFO", "msg": "[FEATURE AGENT] [OK] Decomposed into 5 features. MVP: ['Registration', 'Video Upload', 'Caption Generation']"}
+{"time": "2026-04-27 16:28:18,429", "level": "INFO", "msg": "  Features: ['Registration', 'Video Upload', 'Caption Generation', 'Caption Editing', 'Profile Management']"}
+{"time": "2026-04-27 16:28:18,429", "level": "INFO", "msg": "  Features: ['Registration', 'Video Upload', 'Caption Generation', 'Caption Editing', 'Profile Management']"}
+{"time": "2026-04-27 16:28:18,430", "level": "INFO", "msg": "\n=== Running Phase 2: Market Research ==="}
+{"time": "2026-04-27 16:28:26,201", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-27 16:28:27,697", "level": "INFO", "msg": "[OK] Tier 1 (primary): CompetitorNamesOutput"}
+{"time": "2026-04-27 16:29:43,680", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-27 16:29:47,189", "level": "INFO", "msg": "[OK] Tier 1 (primary): MarketOutput"}
+{"time": "2026-04-27 16:29:47,192", "level": "INFO", "msg": "\n=== Running USP Agent: Finding uncovered gap ==="}
+{"time": "2026-04-27 16:29:47,671", "level": "INFO", "msg": "[USP AGENT] 1 complaints, 1 competitors"}
+{"time": "2026-04-27 16:29:47,671", "level": "INFO", "msg": "[USP AGENT] Uncovered complaints: []"}
+{"time": "2026-04-27 16:29:47,671", "level": "INFO", "msg": "[USP AGENT] No uncovered complaints — gap_found=False"}
+{"time": "2026-04-27 16:29:47,671", "level": "INFO", "msg": "  USP gap_found: False | No unique gap found. All user complaints are already addressed by existing compe"}
+{"time": "2026-04-27 16:29:47,674", "level": "INFO", "msg": "\n=== Running Phase 3: Verdict ==="}
+{"time": "2026-04-27 16:29:51,689", "level": "INFO", "msg": "VERDICT SCORES: {'market_proof': 8, 'competition': 25, 'total': 33}"}
+{"time": "2026-04-27 16:29:51,691", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-27 16:29:54,356", "level": "INFO", "msg": "[OK] Tier 1 (primary): VerdictOutput"}
+{"time": "2026-04-27 16:30:02,361", "level": "INFO", "msg": "\\n=== Running Phase 3.5: Kill Condition ==="}
+{"time": "2026-04-27 16:30:02,836", "level": "INFO", "msg": "\n--- KILL CONDITION RESEARCH FOR AutoCaption ---"}
+{"time": "2026-04-27 16:30:15,528", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-27 16:30:16,507", "level": "INFO", "msg": "[TPM GUARD] Window ~4433 tokens used. Sleeping 30s before next call..."}
+{"time": "2026-04-27 16:30:47,997", "level": "INFO", "msg": "[OK] Tier 1 (primary): KillConditionOutput"}
+{"time": "2026-04-27 16:30:56,002", "level": "INFO", "msg": "\n=== Running Phase 4: Technical R&D ==="}
+{"time": "2026-04-27 16:31:01,223", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-27 16:31:04,213", "level": "INFO", "msg": "[OK] Tier 1 (primary): TechOutput"}
+{"time": "2026-04-27 16:31:12,216", "level": "INFO", "msg": "\n=== Running Phase 4b: Service Resolver ==="}
+{"time": "2026-04-27 16:31:12,217", "level": "INFO", "msg": "[SERVICE RESOLVER] Cache HIT — skipping Tavily (4 needs)."}
+{"time": "2026-04-27 16:31:12,217", "level": "INFO", "msg": "  Services resolved: 4"}
+{"time": "2026-04-27 16:31:12,218", "level": "INFO", "msg": "\n=== Running Phase 5: Dev Blueprint ==="}
+{"time": "2026-04-27 16:31:12,764", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-27 16:31:14,269", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/BlueprintOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-27 16:31:14,271", "level": "INFO", "msg": "[RETRY] primary rate-limited (attempt 1/2). Waiting 2s before retry..."}
+{"time": "2026-04-27 16:31:16,271", "level": "INFO", "msg": "[TPM GUARD] Window ~3559 tokens used. Sleeping 32s before next call..."}
+{"time": "2026-04-27 16:31:48,930", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/BlueprintOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-27 16:31:48,930", "level": "INFO", "msg": "[REDUNDANCY] primary rate-limited. Moving to next provider..."}
+{"time": "2026-04-27 16:32:06,925", "level": "INFO", "msg": "[OK] Tier 1 (secondary-fallback): BlueprintOutput"}
+{"time": "2026-04-27 16:32:06,927", "level": "INFO", "msg": "\n=== Running Phase 5b: Step Generator ==="}
+{"time": "2026-04-27 16:32:06,930", "level": "INFO", "msg": "  Generated 13 build steps"}
+{"time": "2026-04-27 16:32:06,930", "level": "INFO", "msg": "\n=== Running Phase 5c: Prompt Engineer ==="}
+{"time": "2026-04-27 16:32:06,932", "level": "INFO", "msg": "[PROMPT ENGINEER] [OK] Enriched 13 build steps with exact context."}
+{"time": "2026-04-27 16:32:06,932", "level": "INFO", "msg": "  Enriched 13 build steps"}
+{"time": "2026-04-27 16:32:14,933", "level": "INFO", "msg": "\n=== Running Phase 6: Go-To-Market ==="}
+{"time": "2026-04-27 16:32:36,475", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-27 16:32:37,956", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/GTMOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-27 16:32:37,956", "level": "INFO", "msg": "[RETRY] primary rate-limited (attempt 1/2). Waiting 2s before retry..."}
+{"time": "2026-04-27 16:32:39,958", "level": "INFO", "msg": "[TPM GUARD] Window ~4877 tokens used. Sleeping 11s before next call..."}
+{"time": "2026-04-27 16:32:51,610", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/GTMOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-27 16:32:51,610", "level": "INFO", "msg": "[REDUNDANCY] primary rate-limited. Moving to next provider..."}
+{"time": "2026-04-27 16:33:06,611", "level": "INFO", "msg": "[TPM GUARD] Window ~3526 tokens used. Sleeping 33s before next call..."}
+{"time": "2026-04-27 16:33:40,931", "level": "INFO", "msg": "[OK] Tier 1 (secondary-fallback): GTMOutput"}
+{"time": "2026-04-27 16:33:40,932", "level": "INFO", "msg": "\n=== Running Phase 7: Business Model ==="}
+{"time": "2026-04-27 16:33:45,794", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-27 16:33:47,196", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/BusinessOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-27 16:33:47,196", "level": "INFO", "msg": "[RETRY] primary rate-limited (attempt 1/2). Waiting 2s before retry..."}
+{"time": "2026-04-27 16:33:49,198", "level": "INFO", "msg": "[TPM GUARD] Window ~4683 tokens used. Sleeping 3s before next call..."}
+{"time": "2026-04-27 16:33:53,405", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/BusinessOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-27 16:33:53,405", "level": "INFO", "msg": "[REDUNDANCY] primary rate-limited. Moving to next provider..."}
+{"time": "2026-04-27 16:34:08,406", "level": "INFO", "msg": "[TPM GUARD] Window ~4077 tokens used. Sleeping 33s before next call..."}
+{"time": "2026-04-27 16:34:42,337", "level": "INFO", "msg": "[OK] Tier 1 (secondary-fallback): BusinessOutput"}
+{"time": "2026-04-27 16:34:50,341", "level": "INFO", "msg": "\n=== Running Phase 8: Launch Roadmap ==="}
+{"time": "2026-04-27 16:34:51,823", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-27 16:34:53,265", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/RoadmapOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-27 16:34:53,265", "level": "INFO", "msg": "[RETRY] primary rate-limited (attempt 1/2). Waiting 2s before retry..."}
+{"time": "2026-04-27 16:34:55,506", "level": "INFO", "msg": "[WARN] Tier 1 failed (primary/RoadmapOutput): Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kktktjv1ewfrwcgh9g55zc09` servi"}
+{"time": "2026-04-27 16:34:55,506", "level": "INFO", "msg": "[REDUNDANCY] primary rate-limited. Moving to next provider..."}
+{"time": "2026-04-27 16:35:12,094", "level": "INFO", "msg": "[WARN] Tier 1 failed (secondary-fallback/RoadmapOutput): Error code: 400 - {'error': {'message': \"Failed to call a function. Please adjust your prompt. See 'failed_generation' for more details.\", 'type': 'in"}
+{"time": "2026-04-27 16:35:12,094", "level": "INFO", "msg": "[RETRY] Tier 2: scanning error string for JSON blobs..."}
+{"time": "2026-04-27 16:35:12,096", "level": "INFO", "msg": "[OK] Tier 2 (JSON blob/secondary-fallback): RoadmapOutput"}
+{"time": "2026-04-27 16:35:20,098", "level": "INFO", "msg": "\\n=== Running Phase 8.5: Final Verdict Composer ==="}
+{"time": "2026-04-27 16:35:20,603", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-27 16:35:24,083", "level": "INFO", "msg": "[OK] Tier 1 (primary): FinalVerdict"}
+{"time": "2026-04-27 16:35:24,088", "level": "INFO", "msg": "\n=== Running Phase 9: Docx Export ==="}
+{"time": "2026-04-27 16:35:24,224", "level": "INFO", "msg": "[DOCX EXPORTER] [OK] Build guide saved: outputs\\autocaption\\autocaption_build_guide.docx"}
+{"time": "2026-04-27 16:35:24,226", "level": "INFO", "msg": "  Docx saved: outputs\\autocaption\\autocaption_build_guide.docx"}
+{"time": "2026-04-29 22:56:39,839", "level": "INFO", "msg": "\n=== Running Phase 3: Verdict ==="}
+{"time": "2026-04-29 22:57:22,367", "level": "INFO", "msg": "VERDICT SCORES: {'market_proof': 25, 'competition': 15, 'total': 40}"}
+{"time": "2026-04-29 22:57:22,368", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-29 22:57:26,535", "level": "INFO", "msg": "[OK] Tier 1 (primary): VerdictOutput"}
+{"time": "2026-04-29 22:57:34,540", "level": "INFO", "msg": "\\n=== Running Phase 3.5: Kill Condition ==="}
+{"time": "2026-04-29 22:57:35,398", "level": "INFO", "msg": "\n--- KILL CONDITION RESEARCH FOR AI Caption Generator for Reels ---"}
+{"time": "2026-04-29 22:58:47,012", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-29 22:58:49,917", "level": "INFO", "msg": "[OK] Tier 1 (primary): KillConditionOutput"}
+{"time": "2026-04-29 22:58:49,951", "level": "INFO", "msg": "\n=== Running Phase 3: Verdict ==="}
+{"time": "2026-04-29 22:59:07,818", "level": "INFO", "msg": "VERDICT SCORES: {'market_proof': 8, 'competition': 5, 'total': 13}"}
+{"time": "2026-04-29 22:59:38,967", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-29 22:59:42,605", "level": "INFO", "msg": "[OK] Tier 1 (primary): CompetitorNamesOutput"}
+{"time": "2026-04-29 23:01:50,141", "level": "INFO", "msg": "=== FORGE v2.0 — Full Import Check ==="}
+{"time": "2026-04-29 23:01:50,141", "level": "INFO", "msg": "Orchestrator nodes (16): ['idea_analysis_task', 'feature_agent', 'market_research_task', 'usp_task', 'verdict_task', 'kill_condition_task', 'technical_rd_task', 'service_resolver', 'blueprint_task', 'step_generator', 'prompt_engineer', 'gtm', 'business', 'roadmap', 'final_verdict_composer', 'docx_export']"}
+{"time": "2026-04-29 23:01:50,141", "level": "INFO", "msg": "python-docx available: True"}
+{"time": "2026-04-29 23:01:50,150", "level": "INFO", "msg": "Tavily quota used this month: 46 calls"}
+{"time": "2026-04-29 23:01:50,150", "level": "INFO", "msg": "IdeaOutput graveyard: 1 examples, india_insight: True"}
+{"time": "2026-04-29 23:01:50,150", "level": "INFO", "msg": "MarketOutput india_pricing_ceiling: Rs.99/month — students pay Spotify India"}
+{"time": "2026-04-29 23:01:50,150", "level": "INFO", "msg": "MarketOutput graveyard_lessons: 2"}
+{"time": "2026-04-29 23:01:50,150", "level": "INFO", "msg": "EnvProfile: windows/gemini/intermediate/node=True/py=True"}
+{"time": "2026-04-29 23:01:50,150", "level": "INFO", "msg": "OTP success condition: Server logs \"JWT secret loaded. Auth routes ready on /api/auth\""}
+{"time": "2026-04-29 23:01:50,150", "level": "INFO", "msg": "Detected infra needs: ['OTP SMS verification', 'user authentication JWT', 'file storage cloud upload', 'payment gateway India']"}
+{"time": "2026-04-29 23:01:50,151", "level": "INFO", "msg": "=== ALL CHECKS PASSED ==="}
+{"time": "2026-04-29 23:05:43,565", "level": "INFO", "msg": "Testing Pydantic Validators (Fix 8)..."}
+{"time": "2026-04-29 23:05:43,567", "level": "INFO", "msg": "❌ RoadmapOutput: Past date 2024 failed to trigger validator"}
+{"time": "2026-04-29 23:05:43,567", "level": "INFO", "msg": "✅ BusinessOutput: Successfully auto-fixed paid market contradiction"}
+{"time": "2026-04-29 23:05:43,567", "level": "INFO", "msg": "❌ GTMOutput: Short script failed to trigger validator"}
+{"time": "2026-04-29 23:05:43,567", "level": "INFO", "msg": "\nTesting Agent Error Handling (Fix 7)..."}
+{"time": "2026-04-29 23:05:43,571", "level": "INFO", "msg": "✅ GTMOutput supports error fields"}
+{"time": "2026-04-29 23:05:43,571", "level": "INFO", "msg": "✅ RoadmapOutput supports error fields"}
+{"time": "2026-04-29 23:05:43,571", "level": "INFO", "msg": "\nTesting Paid Market Logic (Fix 3)..."}
+{"time": "2026-04-29 23:05:43,571", "level": "INFO", "msg": "❌ validate_paid_market_verdict failed"}
+{"time": "2026-04-29 23:05:43,571", "level": "INFO", "msg": "\n=== VALIDATION COMPLETE ==="}
+{"time": "2026-04-29 23:05:58,054", "level": "INFO", "msg": "\n=== Running Phase 3: Verdict ==="}
+{"time": "2026-04-29 23:06:01,578", "level": "INFO", "msg": "VERDICT SCORES: {'market_proof': 25, 'competition': 15, 'total': 40}"}
+{"time": "2026-04-29 23:06:01,580", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-29 23:06:05,216", "level": "INFO", "msg": "[OK] Tier 1 (primary): VerdictOutput"}
+{"time": "2026-04-29 23:06:13,220", "level": "INFO", "msg": "\\n=== Running Phase 3.5: Kill Condition ==="}
+{"time": "2026-04-29 23:06:14,090", "level": "INFO", "msg": "\n--- KILL CONDITION RESEARCH FOR AI Caption Generator for Reels ---"}
+{"time": "2026-04-29 23:06:18,322", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-29 23:06:21,452", "level": "INFO", "msg": "[OK] Tier 1 (primary): CompetitorNamesOutput"}
+{"time": "2026-04-29 23:06:35,014", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-29 23:06:39,252", "level": "INFO", "msg": "[OK] Tier 1 (primary): KillConditionOutput"}
+{"time": "2026-04-29 23:06:39,257", "level": "INFO", "msg": "\n=== Running Phase 3: Verdict ==="}
+{"time": "2026-04-29 23:06:42,005", "level": "INFO", "msg": "VERDICT SCORES: {'market_proof': 8, 'competition': 5, 'total': 13}"}
+{"time": "2026-04-29 23:06:56,594", "level": "INFO", "msg": "VERDICT SCORES: {'market_proof': 0, 'competition': 5, 'total': 5}"}
+{"time": "2026-04-29 23:07:05,857", "level": "INFO", "msg": "VERDICT SCORES: {'market_proof': 0, 'competition': 25, 'total': 25}"}
+{"time": "2026-04-29 23:07:20,434", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-29 23:07:24,408", "level": "INFO", "msg": "[OK] Tier 1 (primary): MarketOutput"}
+{"time": "2026-04-29 23:12:21,629", "level": "INFO", "msg": "Testing Pydantic Validators (Fix 8)..."}
+{"time": "2026-04-29 23:12:21,632", "level": "INFO", "msg": "✅ RoadmapOutput: Successfully auto-fixed past date"}
+{"time": "2026-04-29 23:12:21,633", "level": "INFO", "msg": "✅ BusinessOutput: Successfully auto-fixed paid market contradiction"}
+{"time": "2026-04-29 23:12:21,633", "level": "INFO", "msg": "✅ GTMOutput: Successfully auto-fixed short script"}
+{"time": "2026-04-29 23:12:21,633", "level": "INFO", "msg": "\nTesting Agent Error Handling (Fix 7)..."}
+{"time": "2026-04-29 23:12:21,640", "level": "INFO", "msg": "✅ GTMOutput supports error fields"}
+{"time": "2026-04-29 23:12:21,640", "level": "INFO", "msg": "✅ RoadmapOutput supports error fields"}
+{"time": "2026-04-29 23:12:21,640", "level": "INFO", "msg": "\nTesting Paid Market Logic (Fix 3)..."}
+{"time": "2026-04-29 23:12:21,640", "level": "INFO", "msg": "✅ validate_paid_market_verdict successfully fixed contradiction"}
+{"time": "2026-04-29 23:12:21,640", "level": "INFO", "msg": "\n=== VALIDATION COMPLETE ==="}
+{"time": "2026-04-29 23:13:54,256", "level": "INFO", "msg": "--- Testing Pydantic Models ---"}
+{"time": "2026-04-29 23:13:54,589", "level": "INFO", "msg": "All 8 Pydantic models OK"}
+{"time": "2026-04-29 23:13:54,590", "level": "INFO", "msg": "--- Testing LLM Router ---"}
+{"time": "2026-04-29 23:13:54,590", "level": "INFO", "msg": "LLM Mode: groq | Model: llama-3.3-70b-versatile"}
+{"time": "2026-04-29 23:13:54,590", "level": "INFO", "msg": "--- Testing Dashboard Store (SQLite) ---"}
+{"time": "2026-04-29 23:13:54,647", "level": "INFO", "msg": "Projects in DB: 39"}
+{"time": "2026-04-29 23:13:54,647", "level": "INFO", "msg": "Dashboard MD length: 2517 chars"}
+{"time": "2026-04-29 23:13:54,647", "level": "INFO", "msg": "--- Testing Agent Imports ---"}
+{"time": "2026-04-29 23:14:01,075", "level": "INFO", "msg": "All 8 agent format functions OK"}
+{"time": "2026-04-29 23:14:01,077", "level": "INFO", "msg": "--- Testing Orchestrator Import ---"}
+{"time": "2026-04-29 23:14:01,224", "level": "INFO", "msg": "Orchestrator + ForgeState OK"}
+{"time": "2026-04-29 23:14:01,248", "level": "INFO", "msg": "--- Testing Research Sources ---"}
+{"time": "2026-04-29 23:14:01,255", "level": "INFO", "msg": "research_sources.py OK"}
+{"time": "2026-04-29 23:14:01,255", "level": "INFO", "msg": ""}
+{"time": "2026-04-29 23:14:01,255", "level": "INFO", "msg": "=== ALL SUCCESS CHECKS PASSED ==="}
+{"time": "2026-04-29 23:24:19,169", "level": "INFO", "msg": "Testing Pydantic Validators (Fix 8)..."}
+{"time": "2026-04-29 23:24:19,169", "level": "INFO", "msg": "❌ RoadmapOutput: Failed to fix past date. Got: Hi! I noticed you have this problem. I built a tool to solve it. Would you be willing to pay $10/month for it?"}
+{"time": "2026-04-29 23:24:19,169", "level": "INFO", "msg": "✅ BusinessOutput: Successfully auto-fixed paid market contradiction"}
+{"time": "2026-04-29 23:24:19,169", "level": "INFO", "msg": "✅ GTMOutput: Successfully auto-fixed short script"}
+{"time": "2026-04-29 23:24:19,169", "level": "INFO", "msg": "\nTesting Agent Error Handling (Fix 7)..."}
+{"time": "2026-04-29 23:24:19,173", "level": "INFO", "msg": "✅ GTMOutput supports error fields"}
+{"time": "2026-04-29 23:24:19,173", "level": "INFO", "msg": "✅ RoadmapOutput supports error fields"}
+{"time": "2026-04-29 23:24:19,173", "level": "INFO", "msg": "\nTesting Paid Market Logic (Fix 3)..."}
+{"time": "2026-04-29 23:24:19,173", "level": "INFO", "msg": "✅ validate_paid_market_verdict successfully fixed contradiction"}
+{"time": "2026-04-29 23:24:19,174", "level": "INFO", "msg": "\n=== VALIDATION COMPLETE ==="}
+{"time": "2026-04-29 23:26:33,713", "level": "INFO", "msg": "Testing Pydantic Validators (Fix 8)..."}
+{"time": "2026-04-29 23:26:33,713", "level": "INFO", "msg": "✅ RoadmapOutput: Successfully auto-fixed past date"}
+{"time": "2026-04-29 23:26:33,713", "level": "INFO", "msg": "✅ BusinessOutput: Successfully auto-fixed paid market contradiction"}
+{"time": "2026-04-29 23:26:33,713", "level": "INFO", "msg": "✅ GTMOutput: Successfully auto-fixed short script"}
+{"time": "2026-04-29 23:26:33,713", "level": "INFO", "msg": "\nTesting Agent Error Handling (Fix 7)..."}
+{"time": "2026-04-29 23:26:33,718", "level": "INFO", "msg": "✅ GTMOutput supports error fields"}
+{"time": "2026-04-29 23:26:33,718", "level": "INFO", "msg": "✅ RoadmapOutput supports error fields"}
+{"time": "2026-04-29 23:26:33,718", "level": "INFO", "msg": "\nTesting Paid Market Logic (Fix 3)..."}
+{"time": "2026-04-29 23:26:33,718", "level": "INFO", "msg": "✅ validate_paid_market_verdict successfully fixed contradiction"}
+{"time": "2026-04-29 23:26:33,718", "level": "INFO", "msg": "\n=== VALIDATION COMPLETE ==="}
+{"time": "2026-04-29 23:33:29,068", "level": "INFO", "msg": "--- Testing Pydantic Models ---"}
+{"time": "2026-04-29 23:33:29,406", "level": "INFO", "msg": "All 8 Pydantic models OK"}
+{"time": "2026-04-29 23:33:29,406", "level": "INFO", "msg": "--- Testing LLM Router ---"}
+{"time": "2026-04-29 23:33:29,406", "level": "INFO", "msg": "LLM Mode: groq | Model: llama-3.3-70b-versatile"}
+{"time": "2026-04-29 23:33:29,406", "level": "INFO", "msg": "--- Testing Dashboard Store (SQLite) ---"}
+{"time": "2026-04-29 23:33:29,463", "level": "INFO", "msg": "Projects in DB: 40"}
+{"time": "2026-04-29 23:33:29,465", "level": "INFO", "msg": "Dashboard MD length: 2572 chars"}
+{"time": "2026-04-29 23:33:29,465", "level": "INFO", "msg": "--- Testing Agent Imports ---"}
+{"time": "2026-04-29 23:35:56,270", "level": "INFO", "msg": "--- Testing Pydantic Models ---"}
+{"time": "2026-04-29 23:35:56,605", "level": "INFO", "msg": "All 8 Pydantic models OK"}
+{"time": "2026-04-29 23:35:56,605", "level": "INFO", "msg": "--- Testing LLM Router ---"}
+{"time": "2026-04-29 23:35:56,605", "level": "INFO", "msg": "LLM Mode: groq | Model: llama-3.3-70b-versatile"}
+{"time": "2026-04-29 23:35:56,605", "level": "INFO", "msg": "--- Testing Dashboard Store (SQLite) ---"}
+{"time": "2026-04-29 23:35:56,668", "level": "INFO", "msg": "Projects in DB: 41"}
+{"time": "2026-04-29 23:35:56,668", "level": "INFO", "msg": "Dashboard MD length: 2627 chars"}
+{"time": "2026-04-29 23:35:56,670", "level": "INFO", "msg": "--- Testing Agent Imports ---"}
+{"time": "2026-04-29 23:36:02,756", "level": "INFO", "msg": "All 8 agent format functions OK"}
+{"time": "2026-04-29 23:36:02,756", "level": "INFO", "msg": "--- Testing Orchestrator Import ---"}
+{"time": "2026-04-29 23:36:02,904", "level": "INFO", "msg": "Orchestrator + ForgeState OK"}
+{"time": "2026-04-29 23:36:02,904", "level": "INFO", "msg": "--- Testing Research Sources ---"}
+{"time": "2026-04-29 23:36:02,909", "level": "INFO", "msg": "research_sources.py OK"}
+{"time": "2026-04-29 23:36:02,909", "level": "INFO", "msg": ""}
+{"time": "2026-04-29 23:36:02,909", "level": "INFO", "msg": "=== ALL SUCCESS CHECKS PASSED ==="}
+{"time": "2026-04-29 23:45:41,845", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-29 23:45:44,862", "level": "INFO", "msg": "[OK] Tier 1 (primary): CompetitorNamesOutput"}
+{"time": "2026-04-29 23:46:59,082", "level": "INFO", "msg": "[FALLBACK] Switching to Groq (llama-3.1-8b-instant)..."}
+{"time": "2026-04-29 23:47:03,290", "level": "INFO", "msg": "[OK] Tier 1 (primary): MarketOutput"}
+{"time": "2026-08-17 22:33:50,317", "level": "INFO", "msg": "[SYSTEM] ChromaDB telemetry monkeypatched."}
