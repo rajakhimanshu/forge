@@ -4,7 +4,7 @@ import re
 from pathlib import Path
 from datetime import datetime
 from dotenv import load_dotenv
-from langchain_ollama import ChatOllama
+from tools.llm_router import safe_print, get_llm
 from langchain_core.messages import SystemMessage, HumanMessage
 from tools.output_formatter import get_project_slug
 
@@ -55,11 +55,7 @@ TOOL_PROFILES = {
 
 # 3. Helper function for LLM calls
 def llm_call(system_prompt: str, user_prompt: str, temperature: float = 0.3) -> str:
-    llm = ChatOllama(
-        model=OLLAMA_MODEL,
-        base_url=OLLAMA_BASE_URL,
-        temperature=temperature
-    )
+    llm = get_llm(temperature=temperature)
     
     response = llm.invoke([
         SystemMessage(content=system_prompt),
@@ -390,7 +386,7 @@ def run_devguide_agent(project_context: dict, tool_name: str = 'gemini_cli', tea
     
     # 0. Detect Project Type
     project_type = detect_project_type(idea_analysis)
-    print(f"Detected project type: {project_type}")
+    safe_print(f"Detected project type: {project_type}")
 
     # --- FIX 1: Enhanced project name extraction ---
     project_name = project_context.get('project_name')
@@ -431,14 +427,14 @@ def run_devguide_agent(project_context: dict, tool_name: str = 'gemini_cli', tea
         "---"
     )
     
-    print("Generating Folder Structure...")
+    safe_print("Generating Folder Structure...")
     folder_structure = "## 1. Folder Structure\n" + generate_folder_structure(project_name, tech_stack, feature_list)
     
-    print("Generating .env.example...")
+    safe_print("Generating .env.example...")
     env_file = "## 2. Environment Variables\n" + generate_env_file(tech_stack)
     
     # Task Batches
-    print("Generating Task Batches...")
+    safe_print("Generating Task Batches...")
     tasks = "## 3. Implementation Tasks\n"
     batch_ranges = list(BATCH_TO_GROUP.keys())
     
@@ -446,11 +442,11 @@ def run_devguide_agent(project_context: dict, tool_name: str = 'gemini_cli', tea
     f_chunks = [feature_list[i:i + 3] for i in range(0, len(feature_list), 3)]
     
     for i, (start, end) in enumerate(batch_ranges):
-        print(f"  Batch {start}-{end}...")
+        safe_print(f"  Batch {start}-{end}...")
         relevant_features = f_chunks[i] if i < len(f_chunks) else ["Final cleanup and optimization"]
         tasks += generate_task_batch(start, end, project_name, tech_stack, relevant_features, tool_profile, project_type)
     
-    print("Generating Deployment Guide...")
+    safe_print("Generating Deployment Guide...")
     deployment = "## 4. Deployment Guide\n" + generate_deployment_guide(project_name, tech_stack, tool_profile)
     
     sections = [header, folder_structure, env_file, tasks, deployment]
@@ -471,12 +467,12 @@ if __name__ == '__main__':
         'idea_analysis': 'An AI-powered tool that auto-generates weekly engineering team reports from Git commits and Jira tickets.',
         'technical_rd': 'FEATURE: GitHub API Integration\nFEATURE: Report Generation\nFEATURE: Dashboard\nTech Stack Summary: Next.js, FastAPI, Supabase, Railway, Vercel'
     }
-    print("Testing devguide_agent standalone...")
+    safe_print("Testing devguide_agent standalone...")
     try:
         # Note: This will only work if Ollama is running locally
         # Otherwise it will timeout or fail connection
         guide = run_devguide_agent(dummy_context, 'gemini_cli')
-        print("\n--- TEST RESULT PREVIEW ---")
-        print("\n".join(guide.split("\n")[:30]))
+        safe_print("\n--- TEST RESULT PREVIEW ---")
+        safe_print("\n".join(guide.split("\n")[:30]))
     except Exception as e:
-        print(f"Test run failed (expected if Ollama is offline): {e}")
+        safe_print(f"Test run failed (expected if Ollama is offline): {e}")

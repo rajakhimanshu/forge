@@ -1,6 +1,12 @@
+from tools.llm_router import safe_print
 import os
 from dotenv import load_dotenv
+
+# Disable ChromaDB telemetry
+os.environ["ANONYMIZED_TELEMETRY"] = "False"
+
 from langchain_ollama import OllamaEmbeddings
+
 try:
     from langchain_chroma import Chroma
 except ImportError:
@@ -10,17 +16,24 @@ except ImportError:
 load_dotenv()
 
 CHROMA_PATH = os.getenv("CHROMA_PATH", "./chroma_db")
+# MUST match the model used in knowledge_base/ingest.py — both must write/read
+# with the same embedding model or similarity search returns dimensionality garbage.
 EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "nomic-embed-text")
-OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
+OLLAMA_BASE_URL  = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
 
 def get_vectorstore():
     """Initializes and returns the Chroma vector store."""
-    embeddings = OllamaEmbeddings(
-        model=EMBEDDING_MODEL,
-        base_url=OLLAMA_BASE_URL
-    )
+    try:
+        embeddings = OllamaEmbeddings(
+            model=EMBEDDING_MODEL,
+            base_url=OLLAMA_BASE_URL,
+        )
+    except Exception as e:
+        safe_print(f"[RAG] Warning: Could not load OllamaEmbeddings ({e}).")
+        return None
     
     if not os.path.exists(CHROMA_PATH):
+        safe_print(f"[RAG]  Warning: ChromaDB path '{CHROMA_PATH}' not found.")
         return None
 
     try:
@@ -30,7 +43,7 @@ def get_vectorstore():
             collection_name="forge_kb"
         )
     except Exception as e:
-        print(f"[RAG]  Warning: Could not load ChromaDB ({e}). Knowledge base will be skipped.")
+        safe_print(f"[RAG]  Warning: Could not load ChromaDB ({e}). Knowledge base will be skipped.")
         return None
 
 def retrieve(query: str, k: int = 3) -> str:
@@ -67,10 +80,10 @@ def get_retriever(k: int = 3):
 if __name__ == "__main__":
     # Test query
     test_query = "What is the correct Git branching strategy for a solo developer?"
-    print(f"Querying knowledge base: '{test_query}'...\n")
+    safe_print(f"Querying knowledge base: '{test_query}'...\n")
     
     try:
         context = retrieve(test_query)
-        print(context)
+        safe_print(context)
     except Exception as e:
-        print(f"Test failed: {e}")
+        safe_print(f"Test failed: {e}")

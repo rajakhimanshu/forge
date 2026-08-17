@@ -1,3 +1,4 @@
+from tools.llm_router import safe_print
 import os
 from pathlib import Path
 from datetime import datetime
@@ -106,7 +107,7 @@ def generate_all_scaffold(project_name: str, idea_summary: str, tech_stack: list
         with open(scaffold_dir / filename, "w", encoding="utf-8") as f:
             f.write(content)
             
-    print(f"Scaffold files generated in: {scaffold_dir}")
+    safe_print(f"Scaffold files generated in: {scaffold_dir}")
     return files
 
 if __name__ == "__main__":
@@ -116,9 +117,9 @@ if __name__ == "__main__":
     t_stack = ["Next.js", "FastAPI", "Supabase", "JWT", "Tavily", "Python"]
     o_dir = "test_outputs"
     
-    print("Testing Scaffold Generator...")
+    safe_print("Testing Scaffold Generator...")
     results = generate_all_scaffold(p_name, i_summary, t_stack, o_dir)
     
     for fname, fcontent in results.items():
-        print(f"\n--- {fname} ---")
-        print(fcontent[:200] + "..." if len(fcontent) > 200 else fcontent)
+        safe_print(f"\n--- {fname} ---")
+        safe_print(fcontent[:200] + "..." if len(fcontent) > 200 else fcontent)

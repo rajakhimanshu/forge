@@ -1,3 +1,4 @@
+from tools.llm_router import safe_print
 import os
 import re
 from pathlib import Path
@@ -20,7 +21,7 @@ def save_report(content: str, project_slug: str, filename: str) -> str:
     with open(file_path, "w", encoding="utf-8") as f:
         f.write(content)
     
-    print(f"Saved: {file_path}")
+    safe_print(f"Saved: {file_path}")
     return str(file_path)
 
 def get_project_slug(idea: str) -> str:
