@@ -1,3 +1,4 @@
+from tools.llm_router import safe_print
 import zipfile
 import xml.etree.ElementTree as ET
 
@@ -21,4 +22,4 @@ def extract_docx_text(path):
     return "\n".join(texts)
 
 if __name__ == "__main__":
-    print(extract_docx_text('forge_devguide_deep_audit.docx'))
+    safe_print(extract_docx_text('forge_devguide_deep_audit.docx'))

@@ -1,3 +1,4 @@
+from tools.llm_router import safe_print
 import os
 import requests
 from dotenv import load_dotenv
@@ -9,7 +10,7 @@ def test_connections():
     load_dotenv()
     
     # 2. Test Ollama connection
-    print("Testing Ollama...")
+    safe_print("Testing Ollama...")
     ollama_status = "FAILED"
     ollama_error = ""
     ollama_url = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
@@ -21,10 +22,10 @@ def test_connections():
             ollama_error = f"Status Code: {response.status_code}"
     except Exception as e:
         ollama_error = str(e)
-    print(f"Ollama: {ollama_status}" + (f" - {ollama_error}" if ollama_status == "FAILED" else ""))
+    safe_print(f"Ollama: {ollama_status}" + (f" - {ollama_error}" if ollama_status == "FAILED" else ""))
 
     # 3. Test Tavily API
-    print("Testing Tavily...")
+    safe_print("Testing Tavily...")
     tavily_status = "FAILED"
     tavily_error = ""
     tavily_key = os.getenv("TAVILY_API_KEY")
@@ -51,9 +52,9 @@ def test_connections():
         chroma_error = str(e)
 
     # 5. Print results
-    print(f"Ollama: {ollama_status}" + (f" - {ollama_error}" if ollama_status == "FAILED" else ""))
-    print(f"Tavily: {tavily_status}" + (f" - {tavily_error}" if tavily_status == "FAILED" else ""))
-    print(f"ChromaDB: {chroma_status}" + (f" - {chroma_error}" if chroma_status == "FAILED" else ""))
+    safe_print(f"Ollama: {ollama_status}" + (f" - {ollama_error}" if ollama_status == "FAILED" else ""))
+    safe_print(f"Tavily: {tavily_status}" + (f" - {tavily_error}" if tavily_status == "FAILED" else ""))
+    safe_print(f"ChromaDB: {chroma_status}" + (f" - {chroma_error}" if chroma_status == "FAILED" else ""))
 
 if __name__ == "__main__":
     test_connections()

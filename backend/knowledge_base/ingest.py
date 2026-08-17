@@ -1,9 +1,10 @@
+from tools.llm_router import safe_print
 import os
 from dotenv import load_dotenv
 from langchain_ollama import OllamaEmbeddings
 from langchain_community.vectorstores import Chroma
 from langchain_community.document_loaders import TextLoader, PyPDFLoader
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 # Load environment variables
 load_dotenv()
@@ -45,18 +46,18 @@ def ingest_documents():
             
             try:
                 if filename.endswith(".md") or filename.endswith(".txt"):
-                    print(f"Ingesting: {filename}")
+                    safe_print(f"Ingesting: {filename}")
                     loader = TextLoader(file_path, encoding='utf-8')
                     all_documents.extend(loader.load())
                 elif filename.endswith(".pdf"):
-                    print(f"Ingesting: {filename}")
+                    safe_print(f"Ingesting: {filename}")
                     loader = PyPDFLoader(file_path)
                     all_documents.extend(loader.load())
             except Exception as e:
-                print(f"Error loading {filename}: {e}")
+                safe_print(f"Error loading {filename}: {e}")
 
     if not all_documents:
-        print("No documents found to ingest.")
+        safe_print("No documents found to ingest.")
         return
 
     # 4. Split documents into chunks
@@ -67,7 +68,7 @@ def ingest_documents():
     chunks = text_splitter.split_documents(all_documents)
 
     # 5. Store in ChromaDB
-    print(f"Creating vector store at {CHROMA_PATH}...")
+    safe_print(f"Creating vector store at {CHROMA_PATH}...")
     vectorstore = Chroma.from_documents(
         documents=chunks,
         embedding=embeddings,
@@ -75,7 +76,7 @@ def ingest_documents():
         collection_name="forge_kb"
     )
     
-    print(f"Done. {len(all_documents)} documents ({len(chunks)} chunks) indexed.")
+    safe_print(f"Done. {len(all_documents)} documents ({len(chunks)} chunks) indexed.")
 
 if __name__ == "__main__":
     ingest_documents()
